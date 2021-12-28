@@ -1,0 +1,18 @@
+package com.day6assign;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class EvenOdd {
+
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	
+	int numb;
+	
+	String str = "";
+	
+	System.out.print("Type a number: ");
+	
+	numb = Integer.parseInt(br.rea)
+	
+}
