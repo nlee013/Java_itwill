@@ -1,0 +1,10 @@
+package com.day6;
+
+//Class를 만드는 이유는 재사용성 때문.
+public class Test33 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

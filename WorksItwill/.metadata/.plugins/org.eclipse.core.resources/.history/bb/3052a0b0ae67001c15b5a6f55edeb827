@@ -1,0 +1,22 @@
+package com.day6;
+
+import java.util.Scanner;
+
+public class Rect {
+
+	public void input() {
+		Scanner sc = new Scanner(System.in);
+		
+		int w, h; //지역변수
+		
+		System.out.print("Type a measure of width: ");
+		w = sc.nextInt();
+		
+		System.out.print("Type a measure of height: ");
+		h = sc.nextInt();
+		
+		return; //void일 때는 생략.return은 method를 끝내게 함
+		
+		
+	}
+}
