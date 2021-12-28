@@ -1,0 +1,13 @@
+package com.day3;
+
+public class Test7 {
+
+	//void = 반환값 없음. main은 기본 default.
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+	//System.out.print -> out은 printStream의 out을 가져와서 연결고리로 쓰는것임.
+}

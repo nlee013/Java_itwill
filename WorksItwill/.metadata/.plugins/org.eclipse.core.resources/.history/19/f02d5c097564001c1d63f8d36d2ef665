@@ -1,0 +1,55 @@
+package com.day4;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+import org.omg.Messaging.SyncScopeHelper;
+
+//사용자가 입력한 수까지의 합계를 구하기
+
+
+public class Test17 {
+
+	public static void main(String[] args) throws IOException {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int num, sum = 0;
+		//String ans;
+		char ans;
+		
+		//무조건. 계속 실행되는 것을 무한 루프라 표함. 부등호는 true/false로 인식하지만, true로 하면 무한루프됨.
+		while(true) {
+			
+			do{
+				System.out.print("Which number do you want?");//100
+				num = sc.nextInt();
+			  }while(num < 1 || num > 5000); //조건을 줄 때 뒤에 false값이 나오게 부정 조건을 같이 붙여줘서 코드를 짜자.
+			
+			sum = 0;//항상 초기값을 설정해 누적된 값이 쌓이지 않고 깔끔한 값이 나오게 코드짜자.
+			
+			for(int i = 1; i <= num; i++) {
+				
+				sum += i;//sum = sum + i;(<- 무조건 누적되는 코드임)와 같은 코드
+			}
+			
+			System.out.println("1~" + num + "까지의 sum: " + sum);
+			System.out.print("Do you want to continue? "); //Y, y, N, n
+			
+			ans = (char)System.in.read();
+			
+			//조건이 양 쪽다 부정일 때 &&를 사용. EX) ans != 'Y' || ans = 'y' 둘 중 하나만 부정 조건일 때는 ||(or)를 사용.
+			if(ans != 'Y' && ans != 'y') { 
+				
+				System.out.println("Shut down the programme");
+				//while, for, do~while, switch문(<-얘는 break 필수)에 사용가능. 반복문을 중지할 때 사용함.
+				break;
+			}
+			
+			
+		}
+		
+		//sc.close();//원래는 해줘야되지만 안해도 무관함. 가끔 꼭 사용할 경우는 꼭 사용해야됨.여기선 안필요함
+	}
+
+}

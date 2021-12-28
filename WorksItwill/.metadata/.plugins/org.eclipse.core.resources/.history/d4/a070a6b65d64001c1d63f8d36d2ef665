@@ -1,0 +1,43 @@
+package com.day4;
+
+import java.util.Scanner;
+
+public class Test16 {
+
+	public static void main(String[] args) {
+
+		//반복문(for, while, do~while)
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int unit;
+		
+		System.out.print("Type unit: "); //7
+		unit = sc.nextInt();
+		
+		//가장 쉽게 사용가능한 반복문은 if이며, 초기값을 설정해줘야됨.
+		
+		for(int i = 1; i <= 9; i++){
+			
+			System.out.println(unit + "*" + i + "=" + (unit*i));
+		}
+		
+		//여러개를 반복해서 실행하는 반복문
+//		System.out.println(unit + "*" + 1 + "=" + (unit)*1);
+//		System.out.println(unit + "*" + 2 + "=" + (unit)*2);
+//		System.out.println(unit + "*" + 3 + "=" + (unit)*3);
+//		System.out.println(unit + "*" + 4 + "=" + (unit)*4);
+		
+		System.out.println("-----------------------");
+		
+		int j = 1;
+		
+		while(j <= 9) {
+			
+			System.out.println(unit + "*" + j + "=" + (unit*j));
+			j++;
+		}
+		
+	}
+
+}

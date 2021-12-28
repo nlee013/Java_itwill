@@ -1,0 +1,36 @@
+package com.day3;
+
+import java.util.Scanner;
+
+public class Test13 {
+
+	public static void main(String[] args) {
+
+		//세개의 수를 입력 받아서 작은 수에서 큰 수 순으로 출력 (오름차순)
+		
+		//1. 3개의 수를 입력 -> 9 5 2
+		//2. 결과 : 2 5 9
+		
+		Scanner sc = new Scanner(System.in);
+		int num1, num2, num3, temp; // 9 5 2
+	
+		System.out.print("num1 num2 num3");
+		
+		if(num1 > num2  && num1 > num3) {
+			
+			temp= num1;
+			num1 = num2;
+			num2 = temp;
+			
+		}
+		
+		num1 = sc.nextInt();
+		num2 = sc.nextInt();
+		num3 = sc.nextInt();
+		temp = sc.nextInt();
+		
+		//System.out.println(num1 + num2 + num3 );
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.day4;
+
+//ctrl + i -> 자동 코드 정리 단축 키
+
+public class Test23 {
+
+	public static void main(String[] args) {
+		
+		//모든 변수에는 배열이 있다.
+		//int num[] = new int[5];
+		
+		int[] num = new int[5]; //<-기본 정석이므로 이걸 먼저 써보자.
+
+		
+		
+	}
+
+}

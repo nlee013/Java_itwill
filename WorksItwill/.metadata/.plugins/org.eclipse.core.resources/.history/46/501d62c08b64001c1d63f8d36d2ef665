@@ -1,0 +1,38 @@
+package com.day4;
+
+//ctrl + i -> 자동 코드 정리 단축 키
+
+public class Test23 {
+
+	public static void main(String[] args) {
+		
+		//모든 변수에는 배열이 있다.
+		//int num[] = new int[5];
+		
+		int[] num = new int[5]; //<-기본 정석이므로 이걸 먼저 써보자.
+		//만약 변수 이름을 바꾸고 싶으면 앞에 int->string/float/double로 바꿔 작성가능하지만, 섞어 사용하면 관리하기 힘듦.
+
+		//배열의 length는 괄호()가 없음
+		System.out.println("배열 갯수: " + num.length); //-> length는 위 코드의 int[5]-> 5개를 가져온다. 
+		
+		num[0] = 10;
+		num[1] = 20;
+		num[2] = 30;
+		num[3] = 40;
+		num[4] = 50;
+
+		for(int i = 0; i< num.length; i++) {
+			
+			System.out.println("num["+ i +"]:" + num[i]);
+			
+		/*System.out.println("num[0]" + num[0]);
+		System.out.println("num[1]" + num[1]);
+		System.out.println("num[2]" + num[2]);
+		System.out.println("num[3]" + num[3]);
+		System.out.println("num[4]" + num[4]);*/
+		
+		}
+		
+	}
+
+}

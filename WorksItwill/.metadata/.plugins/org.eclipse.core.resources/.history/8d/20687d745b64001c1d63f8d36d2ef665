@@ -1,0 +1,21 @@
+package com.day4;
+
+import java.util.Scanner;
+
+public class Test16 {
+
+	public static void main(String[] args) {
+
+		//¹Ýº¹¹®(for, while, do~while)
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int unit;
+		
+		System.out.print("Type unit: "); //7
+		unit = sc.nextInt();
+		
+		System.out.println(unit + "+" + 1 + (unit)*1);
+	}
+
+}

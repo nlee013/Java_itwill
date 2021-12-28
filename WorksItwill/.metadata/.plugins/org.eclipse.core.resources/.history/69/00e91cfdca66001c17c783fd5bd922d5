@@ -1,0 +1,15 @@
+package com.assignments;
+
+public class Day5assign {
+	
+	public static void main(String[] args) {
+
+		//달력을 기준으로 사용자한테 연, 월, 일 값을 받아서 결과를
+		//2021년 12월 27일은 월요일 로 출력.
+		//입력값으로 출력값이 요일까지 나오게 만들기
+		
+		
+		
+	}
+
+}

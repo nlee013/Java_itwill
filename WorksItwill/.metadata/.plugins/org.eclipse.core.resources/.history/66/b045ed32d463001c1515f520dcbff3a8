@@ -1,0 +1,199 @@
+package com.day3;
+
+//Scanner를 사용하는 이유는 BufferedReader보다 많이 사용하고 간편하기 때문에 자주 사용.
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+/*
+1.정수를 입력 받아서 짝수, 홀수를 구별해서 출력.
+예) 3 입력시 -> 3 => 홀수
+예) 4 입력시 -> 4 => 짝수
+*/
+
+public class Test14 {
+
+	/*public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int num;
+		String temp;
+		
+		System.out.print("Type numbers: ");
+		num = Integer.parseInt(br.readLine());
+
+		if(num%2 == 0) {
+			temp = "even number";
+		}
+		else if(num%2 != 0) {
+			temp = "odd number";
+		}
+
+	}*/
+	
+	//2.두 개의 정수를 입력 받고, 큰 숫자와 작은 숫자를 구분해서 출력.(if문 이용)
+	//예) 20, 30 입력시 -> 큰 숫자 30, 작은 숫자 20
+	
+	/*
+	    public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num1, num2, temp;
+		
+		System.out.print("Type numbers"); //20 30
+		
+		num1 = sc.nextInt(); //20
+		num2 = sc.nextInt(); //30
+		
+		if(num1 < num2) {
+			temp = num1;
+			num1 = num2;
+			num2 = temp;
+		}
+		
+		System.out.printf("Result: %d %d", num1, num2);
+	}
+*/
+	
+	//3. 네 개의 정수를 입력 받고, 제일 큰 숫자와 제일 작은 숫자를 구분해서 출력.(if문 이용)
+	//예) 20, 30, 40, 50 입력시 -> 제일 큰 숫자 50, 제일 작은 숫자 20
+	
+	/*public static void main(String[] args) {
+		
+		
+		int num1, num2, num3, num4, temp; //20 30 40 50
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Type numbers");
+		
+		sc = new Scanner(sc.next()).useDelimiter("\\s*,\\s*");
+		
+		num1 = sc.nextInt();
+		num2 = sc.nextInt();
+		num3 = sc.nextInt();
+		num4 = sc.nextInt();
+		
+		if(num4 >= 50) {
+			
+			temp = num4;
+			num4 = num2;
+			num2 = temp;
+		}
+		
+		if(num2 <= 20) {
+			
+			temp = num4;
+			num4 = num2;
+			num2 = temp;
+		}
+		System.out.printf("Result : %d %d\n", num4, num1);
+
+	}*/
+	
+	//4. 년도를 입력받고, 윤년인지 아닌지를 출력.
+	//예) 2010 입력시 -> 2010 => 평년
+	//	  2012 입력시 -> 2012 => 윤년
+	
+	/*
+	    public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num1;
+		String str;
+		
+		System.out.println("Type the number of year :");
+		
+		num1 = sc.nextInt(); //2010
+		
+		str = (num1 % 4 == 0) && (num1 % 100 != 0) || (num1 % 400 ==0)? "윤년" : "평년";
+
+		System.out.println(num1 + ":" + str);
+
+	}
+	*/
+	
+//5.단가 15,800원짜리 상품을 일정 수량 이상 구입시 할인을 해줍니다.
+//	할인율은 다음과 같습니다.
+//	10개 이상 -> 10%
+//	20개 이상 -> 15%
+//	30개 이상 -> 20%
+//	판매금액을 계산해봅니다.
+//	예) 구입수량 15개인 경우 -> 구입수량: 15개, 판매총금액: 213300원
+	
+	/*
+	 	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int a = 15800;
+		int num;
+		double res = 0;
+	
+		System.out.print("How many number of products did you purchase?");
+		
+		num = sc.nextInt();
+		
+		if(num >= 10) {
+			
+			res = a*0.9;
+		}
+		
+		else if(num >= 20) {
+			res = a*0.85;
+		}
+		else if(num >= 30) {
+			res = a*0.8;
+		}
+		
+		System.out.printf("Result : %g\n", res);
+
+	}*/
+	
+//	6. 이름과 3과목의 점수를 입력 받아 다음조건에 따라 출력
+//	-모든 과목의 점수가 40점 이상이고 평균이 60점 이상이면 합격
+//	-한과목이라도 40점 미만이고 평균이 60점 이상이면 과락
+//	-평균이 60점 미만이면 불합격
+	
+	public static void main(String[] args) {
+		
+		int chap1, chap2, chap3, av;
+		String name, res;
+		String fin = "";
+	
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Type your name");
+		
+		name = sc.next();
+
+		System.out.print("Type your whole scores :");
+		
+		chap1 = sc.nextInt();
+		chap2 = sc.nextInt();
+		chap3 = sc.nextInt();
+		
+		av = (chap1 + chap2 + chap3)/3;
+				
+		if(av >= 60) {
+			
+			fin = "Pass";
+		}
+		else if(av < 60) {
+			fin = "Fail";
+		}
+		
+		if(chap1 < 40 || chap2 < 40 || chap3 < 40) {
+			fin = "과락";
+		}
+		System.out.println("Name:" + name + "Average :" + (chap1 + chap2 + chap3)/2 + "Result:" + fin);
+		fin = sc.next();
+
+	}
+	
+	
+	
+}

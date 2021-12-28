@@ -1,0 +1,31 @@
+package com.day4;
+
+import java.util.Scanner;
+
+//사용자가 입력한 수까지의 합계를 구하기
+
+
+public class Test17 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int num, sum;
+		//String ans;
+		char ans;
+		
+		//무조건. 무한 루프함.
+		while(true) {
+			
+			System.out.println("aaa");
+			
+		}
+		
+		
+		
+		
+		//sc.close();//원래는 해줘야되지만 안해도 무관함. 가끔 꼭 사용할 경우는 꼭 사용해야됨.여기선 안필요함
+	}
+
+}

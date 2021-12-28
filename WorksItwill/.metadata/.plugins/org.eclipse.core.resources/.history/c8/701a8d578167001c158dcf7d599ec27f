@@ -1,0 +1,20 @@
+package com.day6;
+
+import java.util.Scanner;
+
+//10명 이내의 이름과 점수를 입력받아 석차 구하기
+
+public class Test28 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int[] score;
+		String[] name;
+		
+		
+		
+	}
+
+}

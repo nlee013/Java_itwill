@@ -1,0 +1,13 @@
+package com.day3;
+
+public class Test11 {
+
+	public static void main(String[] args) {
+		
+		//if문은 종류 3가지. if, else, else if
+		
+		
+
+	}
+
+}

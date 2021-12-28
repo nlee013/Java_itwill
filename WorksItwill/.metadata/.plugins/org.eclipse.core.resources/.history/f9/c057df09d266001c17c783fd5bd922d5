@@ -1,0 +1,16 @@
+package com.day5;
+
+import java.util.Scanner;
+
+public class Test26 {
+
+	//10명 이내의 이름과 점수를 입력 시,
+	//정수가 높은 사람에서 낮은 사람 순으로(내림차순) 출력하기
+	public static void main(String[] args) {
+
+		Scanner sc = new 
+		int[] num = new int[10];
+		
+	}
+
+}

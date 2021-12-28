@@ -1,0 +1,16 @@
+package com.day4;
+
+public class Test16 {
+
+	public static void main(String[] args) {
+
+		//¹Ýº¹¹®(for, while, do~while)
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int dan;
+		
+		
+	}
+
+}

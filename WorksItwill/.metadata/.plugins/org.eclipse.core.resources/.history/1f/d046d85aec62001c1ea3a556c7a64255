@@ -1,0 +1,24 @@
+package com.day2;
+
+import java.io.BufferedReader; // c언어에서  include와 같음
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Test4 {
+
+	public static void main(String[] args) throws IOException {
+
+		//ctrl + space하면 자동으로 위에 import됨
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int r;
+		double area, length;
+		
+		System.out.println("Radius?");//radius = 10
+		
+		r = Integer.parseInt(br.readLine());
+		
+		
+	}
+
+}

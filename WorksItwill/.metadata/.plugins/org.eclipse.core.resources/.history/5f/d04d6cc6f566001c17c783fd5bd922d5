@@ -1,0 +1,20 @@
+package com.day5assign;
+
+import java.util.Scanner;
+
+//3. 1~3사이의 난수를 발생시켜 가위,바위,보 게임 프로그램 작성
+//1:가위, 2:바위, 3:보
+
+public class Day5Q3 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("1:가위, 2:바위, 3:보");
+		int com, user;
+		int[] num = new int[3];
+		
+	
+	}
+
+}

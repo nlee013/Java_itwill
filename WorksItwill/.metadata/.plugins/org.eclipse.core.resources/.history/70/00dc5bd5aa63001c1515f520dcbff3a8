@@ -1,0 +1,17 @@
+package com.day3;
+
+public class Test9 {
+
+	public static void main(String[] args) {
+		
+		//자료형 char -> character.  char는 class이며, 숫자를 저장함.
+		
+		//string str = "I"; --> ""는 string에서만 쓰임. 오직 문자를 표현할 때만 사용.
+		
+		char ch = 'n'; // 오직  1byte 또는 2byt 한 자만 가능
+		
+		System.out.println(ch);
+		
+	}
+
+}

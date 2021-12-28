@@ -1,0 +1,39 @@
+package com.day3;
+
+import java.util.Scanner;
+
+//Scanner는 단락 문자를 구분해서 데이터를 입력.
+//기본 단락은 공백
+public class Test12 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		String name;
+		int kor, eng, mat;
+	
+		System.out.print("Name,Korean,English,Mathematics?");
+		
+		// \\s는 공백을 의미-> 정규화 표현식이라고 부름. *는 여러개를 의미
+		
+		//기본 단락은 공백을 의미하는 말은 ny 100 100 100 처럼 Scanner에서 인식을 자동으로 하지만
+		// 다른 기호를 사용하려면 use Delimiter를 사용해서 분류를 해준다.
+		
+		// \\s는 사용함으로써 공백으로 한칸씩 분류가 가능하다는 의미.
+		//\\s에 *을 붙이므로 공백을 여러개를 사용할 수 있다는 의미.
+		
+		//다만, Scanner에서 띄어쓰기를 인식못하고 null값으로 인식해서 쓰레기 값으로 인식함.
+		// "\\s*,\\s*"는 ,하나의 공백이라고 생각하면 됨.
+		
+		sc = new Scanner(sc.next()).useDelimiter("\\s*,\\s*");
+		
+		name = sc.next();
+		kor = sc.nextInt();
+		eng = sc.nextInt();
+		mat = sc.nextInt();
+		
+		System.out.println(name + ":" + "Total Score is " + (kor + eng + mat));
+	}
+
+}

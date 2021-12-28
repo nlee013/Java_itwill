@@ -1,0 +1,35 @@
+package com.day2;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Test6 {
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		//πÿ∫Ø width ≥Ù¿Ã height∏¶ ¿‘∑¬πﬁæ∆ ªÔ∞¢«¸ ≥–¿Ã area ±∏«œ±‚
+		//πÿ∫Ø? 17
+		//≥Ù¿Ã? 22
+		//≥–¿Ã ? 
+		//≥–¿Ã = πÿ∫Ø x ≥Ù¿Ã/2
+		
+		int width, height;
+		double area;
+		
+		width = Integer.parseInt(br.readLine());
+		height = Integer.parseInt(br.readLine());
+		
+		area = width*height/2;
+		
+		System.out.print("Width?:" + width); //10
+		 
+		System.out.print("Height?:" + height); //22
+		System.out.print("Area?:" + area);
+		
+		
+
+	}
+
+}

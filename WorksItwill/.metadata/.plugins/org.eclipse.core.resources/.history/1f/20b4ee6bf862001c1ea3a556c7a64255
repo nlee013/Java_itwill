@@ -1,0 +1,16 @@
+package com.day2;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Test5 {
+
+	public static void main(String[] args) {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//console에 읽어올때는 in사용. 출력할 때는 out
+		
+		
+	}
+
+}

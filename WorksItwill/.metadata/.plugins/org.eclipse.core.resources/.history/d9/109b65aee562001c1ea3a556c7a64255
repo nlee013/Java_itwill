@@ -1,0 +1,20 @@
+
+public class Test3 {
+
+	public static void main(String[] args) {
+
+	}
+
+	int r = 10; // (r= radius)
+	
+	//자료형. 실수(소수점 포함 수)
+	float area, length; //float area; float length;도 가능
+	
+	area = r*r*3.14; //면적
+	length = r*2*3.14; //둘레
+
+	System.out.println(area);
+	System.out.println(length);
+	
+	
+}

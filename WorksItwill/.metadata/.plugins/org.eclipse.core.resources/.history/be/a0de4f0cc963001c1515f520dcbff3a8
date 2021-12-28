@@ -1,0 +1,33 @@
+package com.day3;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/*
+1.정수를 입력 받아서 짝수, 홀수를 구별해서 출력.
+예) 3 입력시 -> 3 => 홀수
+예) 4 입력시 -> 4 => 짝수
+*/
+
+public class Test14 {
+
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int num;
+		String temp;
+		
+		System.out.print("Type numbers: ");
+		num = Integer.parseInt(br.readLine());
+
+		if(num%2 == 0) {
+			temp = "even number";
+		}
+		else if(num%2 != 0) {
+			temp = "odd number";
+		}
+
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.day6;
+
+//  Bubble sort라는 것도 있음.
+
+public class Test29 {
+
+	public static void main(String[] args) {
+
+		int[] num = { 37, 26, 19, 12, 7};
+		
+		int i, j, temp;
+		
+		System.out.print("Source Data: ");
+		
+		for(i = 0; i < num.length; i++) {
+			System.out.printf("%4d", num[i]);
+		}
+		System.out.println();
+		
+		//Bubble sort
+		
+		for(i = 1; i < num.length; i++) {
+			for(j = 0; j < num.length - i; j++) {
+				
+				System.out.println(i + ":" + j);
+			}
+		}
+		
+		
+		System.out.print("Source Data: ");
+		
+		for(int k = 0; k < num.length; k++) {
+			System.out.printf("%4d", num[k]);
+		}
+		System.out.println();
+	}
+
+}

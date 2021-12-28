@@ -1,0 +1,23 @@
+package com.day1;
+
+//public(누구나), private(지정) = 접근 지정자
+//Test 1 = 첫글자는 영문 대문자 -> 카멜표기법 CustomInfoSer
+
+class Test1 {
+
+	//method : 실행 명령어 -> 누가 사용가능한가 -> public
+	//main = method의 이름(영문 소문자로 시작함). class = 영문 대문자로 시작
+	//string = 매개변수
+	
+	//아래 이름이 반드시 변경되면 안됨.
+	
+	public static void main(String[] args) {
+
+		System.out.println("Hi, my darling");
+		
+		 System.out.println("My love");
+		 
+		 System.out.println("To be continue..");
+		
+	}
+}

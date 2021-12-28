@@ -1,0 +1,27 @@
+package com.day4;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+//°è»ê±â Version.2
+public class Test22 {
+
+	public static void main(String[] args) throws IOException {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int n1, n2;
+		
+		char oper; //operator
+		
+		System.out.print("Type first number: ");
+		n1 = sc.nextInt();
+		
+		System.out.print("Type second number: ");
+		n2 = sc.nextInt();
+		
+		System.out.print("Operator [+,-,*,/]?");
+		oper = (char)System.in.read();
+	}
+
+}

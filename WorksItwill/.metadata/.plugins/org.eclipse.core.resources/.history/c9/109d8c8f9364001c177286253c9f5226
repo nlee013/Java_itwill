@@ -1,0 +1,25 @@
+package com.assignments;
+
+/*1. 1에서 100까지 수의 홀수의 합, 짝수의 합, 전체의 합
+짝수합 : 2550
+홀수합 : 2500
+합 : 5050*/
+
+public class Day4_Assignm {
+	
+	public static void main(String[] args) {
+		
+		int n,sum;
+		
+		sum = 0;
+		
+		for(n = 1; n <=100; n+=2) {
+			sum += n;
+		}
+		
+		System.out.println("Result of 홀수의 합: " + sum);
+
+
+	}
+
+}

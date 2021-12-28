@@ -1,0 +1,18 @@
+package com.day5;
+
+import java.util.Scanner;
+
+public class Test24 {
+
+	public static void main(String[] args) {
+
+		//만년 달력 만들기 -> 연도와 월을 입력시 달력 형태로 출력.
+		
+		//사용자에게 연도와 월을 받을 것 ->scanner
+		
+		Scanner sc = new 
+		
+		
+	}
+
+}

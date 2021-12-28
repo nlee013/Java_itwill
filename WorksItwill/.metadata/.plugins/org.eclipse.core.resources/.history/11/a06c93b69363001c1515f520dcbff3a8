@@ -1,0 +1,27 @@
+package com.day3;
+
+public class Test7 {
+
+	//void = 반환값 없음. main은 기본 default.
+	
+	//System.out.print -> out은 printStream의 out을 가져와서 연결고리로 쓰는것임.
+	
+	public static void main(String[] args) {
+
+		float f = 0; //초기화. 실제로는 0.0.이 들어가 있는 상태
+		double d = 0; //0.0
+		
+		//일반적으로 i, j, k 등 사용함
+		//<= 크거나 같거나를 의미.
+
+		//for 시작값; 최대값; 증가값; i++ = i+1 를 의미.
+		
+		for(int i = 1; i <=10; i++ ) {
+			
+			System.out.println("Cheers!!:" + i);
+		}
+		
+	}
+
+	
+}
