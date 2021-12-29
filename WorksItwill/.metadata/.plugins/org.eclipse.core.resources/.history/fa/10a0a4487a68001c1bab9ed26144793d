@@ -1,0 +1,13 @@
+package com.Fitness;
+
+import java.util.Scanner;
+
+public class Fitness {
+
+	String name, id, address;
+	int pw, bmi, num; //num회원고유번호
+	
+	Health[] ht;
+	
+	Scanner sc = new 
+}

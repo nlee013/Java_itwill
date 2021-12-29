@@ -1,0 +1,28 @@
+package com.Fitness;
+
+import java.util.Scanner;
+
+public class Fitness {
+	
+	Health[] ht;
+	
+	ht = new Health();
+	
+	Scanner sc = new Scanner(System.in);
+	
+	public void input() {
+		
+		String[] title = {"Create new ID: ","Type your home address: ",
+							"Type your height(cm): ", "Type your weight: " };
+		
+		System.out.print("Type your name: ");
+		name = sc.next();
+		
+		
+		
+		System.out.print(title);
+		ht.
+		
+		
+	}
+}

@@ -1,0 +1,30 @@
+package com.Fitness;
+
+import java.util.Scanner;
+
+public class Fitness {
+
+	String name, id, address;
+	int pw,bmi, num; //num회원고유번호
+	double height, weight;
+	
+	Health ht;
+	
+	Scanner sc = new Scanner(System.in);
+	
+	public void set() {
+		
+			System.out.print("Type your name: ");\
+			name = sc.next();
+			
+			ht = new Health();
+	}
+	
+	public void input() {
+		
+		String[] title = {"Create new ID: ","Type your home address: ",
+							"Type your height(cm): ", "Type your weight: " };
+		
+		
+	}
+}

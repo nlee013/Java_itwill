@@ -1,0 +1,50 @@
+package com.score1;
+
+import java.util.Scanner;
+
+public class Score {
+	
+	//int[] inwon; -> inwon이라는 배열 생성(몇개인지 모르지만)
+	
+	int inwon;
+	//Record[] rec = new Record[3];
+	
+	Record[] rec; //-> rec 라는 배열 생성("). 초기값 null값
+	
+	Scanner sc = new Scanner(System.in);
+
+	public void set() {
+		
+		
+		do {
+			System.out.print("인원수?: "); //3
+			inwon = sc.nextInt();
+			
+		}while(inwon < 1 || inwon > 10);
+		
+		rec = new Record[inwon];
+	}
+	
+	public void input() {//void는 반환값이 없음.
+		
+		rec[0] = new Record(); //Record의 rec 방 안에 [0] 첫번째 방에 name 값을 넣기 위해 생성
+		
+		System.out.print("Type your name: "); //nayoung
+		
+		rec[0].name = sc.next();
+		
+		System.out.print("Korean? "); //50
+		rec[0].score[0] = sc.nextInt();
+		
+		System.out.print("English? ");
+		rec[0].score[1] = sc.nextInt();
+		
+		System.out.print("Mathematics? ");
+		rec[0].score[2] = sc.nextInt();
+		
+		
+	}
+	
+	
+
+}

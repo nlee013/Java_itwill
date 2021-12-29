@@ -10,6 +10,10 @@
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="com.day6assign.EvenOdd"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.day6.Rect"/>
+<fullyQualifiedTypeName name="com.day7.SubClass"/>
+<fullyQualifiedTypeName name="com.score1.Record"/>
+<fullyQualifiedTypeName name="com.score1.Score"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

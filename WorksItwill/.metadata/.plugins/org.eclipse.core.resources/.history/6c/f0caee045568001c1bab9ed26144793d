@@ -1,0 +1,11 @@
+package com.day7;
+
+//cpu에서 프로그램 갯수 만큼 thread생성함
+
+public class Test34 {
+
+	public static void main(String[] args) {
+
+	}
+
+}
