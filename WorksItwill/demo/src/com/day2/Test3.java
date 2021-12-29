@@ -1,0 +1,43 @@
+package com.day2;
+
+
+public class Test3 {
+
+	public static void main(String[] args) {
+
+
+	int r = 10; // (r= radius)
+	
+	//자료형. 실수(소수점 포함 수) -> double로 인식함 -> float으로 인식하려면 숫자 뒤에 f를 붙인다 3.14f
+	
+	//float area; float length;도 가능
+	
+	//double area, length;
+	
+	//float이 표현 할 수 있는 숫자는 소수점 6자리 수 (맨 마지막 숫자값은 쓰레기값 <- 결과값이 62.800003)
+	float area, length;
+	
+	area = r*r*3.14f; //면적. 3.14f = 단배정 정수 double = 배정도 정수
+	length = r*2*3.14f; //둘레
+
+	System.out.println(area);
+	System.out.println(length);
+	
+	System.out.println("radius: " + r + ", area: " + area);
+	
+	// 소수점 첫번째 자리로 수정하려면 area : %f -> %.1f로 수정 (다른 숫자도 가능)
+	System.out.printf("radius: %d, area: %.3f\n", r, area); //double -> %g로 표기. int 5 < float 5.0f (둘다4byte)
+	
+	
+	//---------------------------------- 번외
+	
+	int a = 3;
+	float b;
+	
+	b = a;
+	
+	System.out.println(b);
+	
+	}
+}
+
