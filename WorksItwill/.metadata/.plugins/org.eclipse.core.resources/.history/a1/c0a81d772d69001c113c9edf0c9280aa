@@ -1,0 +1,31 @@
+package com.day8;
+
+class Rect{
+	
+	private int w, h;//변수는 무조건 private로 생성하고 생각해라
+
+	public void set(int w, int h) {
+		
+		this.w = w;
+		this.h = h;
+	}
+	
+	 
+	public int area() {
+		return w*h;
+	}
+	
+	public int length() {
+		return (w*h)*2;
+	}
+
+}
+
+public class Test40 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.day8;
+
+public class Test39 {
+
+	public static void main(String[] args) {
+
+		Data ob = new Data();
+		ob.print();
+	}
+
+}

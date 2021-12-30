@@ -32,7 +32,7 @@ public class Fitness2 {
 			System.out.print("Type your name: ");
 			ht2[i].name = sc.next();
 			
-			for(int j = 0; j < inwon; j++) {
+			for(int j = 0; j < 2; j++) {
 				
 				System.out.print(Q[j]);
 				ht2[i].info[j] = sc.next();

@@ -1,0 +1,11 @@
+package com.day8;
+
+public class Data {
+
+	String name ="이나영";
+	int age = 25;
+	
+	public void print() {
+		System.out.println(name + "의 나이는" + age + "살 입니다.");
+	}
+}
