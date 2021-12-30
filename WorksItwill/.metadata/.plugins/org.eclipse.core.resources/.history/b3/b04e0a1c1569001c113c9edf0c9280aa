@@ -11,8 +11,6 @@ class Circle{
 		
 		this.r = r; // 우회 방법에서만 this를 사용함. this.r = Circle.r이지만
 					//class 이름과 같게 하지 않게 하기 위해 this를 사용. this -> class의 이름.
-		
-		//this.r -> private int r이고 = r -> public void setData()안에 있는 int 이다.
 	}
 	
 	public double area() {
@@ -22,7 +20,7 @@ class Circle{
 	
 	public void write(double a) {
 		
-		System.out.println("Radius: " + r); // "Radius" + this.r
+		System.out.println("Radius: " + r); // + this.r
 		System.out.println("Area: " + a);
 	}
 }
