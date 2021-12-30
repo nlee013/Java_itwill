@@ -22,10 +22,9 @@ repositories/file\:_D\:_Itwill_eclipse_configuration_org.eclipse.osgi_375_data_l
 repositories/file\:_D\:_Itwill_eclipse_configuration_org.eclipse.osgi_375_data_listener_1925729951/isSystem=true
 repositories/file\:_D\:_Itwill_eclipse_configuration_org.eclipse.osgi_375_data_listener_1925729951/name=dropins
 repositories/file\:_D\:_Itwill_eclipse_configuration_org.eclipse.osgi_375_data_listener_1925729951/provider=
-repositories/file\:_D\:_Itwill_eclipse_configuration_org.eclipse.osgi_375_data_listener_1925729951/suffix=artifacts.xml
 repositories/file\:_D\:_Itwill_eclipse_configuration_org.eclipse.osgi_375_data_listener_1925729951/type=org.eclipse.equinox.p2.artifact.repository.simpleRepository
 repositories/file\:_D\:_Itwill_eclipse_configuration_org.eclipse.osgi_375_data_listener_1925729951/uri=file\:/D\:/Itwill/eclipse/configuration/org.eclipse.osgi/375/data/listener_1925729951/
-repositories/file\:_D\:_Itwill_eclipse_configuration_org.eclipse.osgi_375_data_listener_1925729951/version=1.0.0
+repositories/file\:_D\:_Itwill_eclipse_configuration_org.eclipse.osgi_375_data_listener_1925729951/version=1
 repositories/file\:_D\:_Itwill_eclipse_p2_org.eclipse.equinox.p2.core_cache/description=
 repositories/file\:_D\:_Itwill_eclipse_p2_org.eclipse.equinox.p2.core_cache/enabled=true
 repositories/file\:_D\:_Itwill_eclipse_p2_org.eclipse.equinox.p2.core_cache/isSystem=true
