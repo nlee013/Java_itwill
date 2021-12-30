@@ -53,16 +53,21 @@ public class Fitness2 {
 			if(ht2[i].bmi < 18.5) {
 			
 			System.out.print("Your BMI: " + ht2[i].bmi + "저체중 입니다. 좀 더 먹어서 찌우세요");
-			}else if(ht2[i].bmi > 18.5 && ht2[i].bmi < 22.9) {
+			}
+			
+			else if(ht2[i].bmi > 18.5 && ht2[i].bmi < 22.9) {
 			
 			System.out.print("Your BMI: " + ht2[i].bmi + "보통 체중 입니다. 지금처럼 유지하세요");
 
-			}else if(ht2[i].bmi > 23 && ht2[i].bmi < 24.9) {
+			}
+			else if(ht2[i].bmi > 23 && ht2[i].bmi < 24.9) {
 			
 			System.out.print("Your BMI: " + ht2[i].bmi + "과체중 입니다. 운동해서 좀 더 뺍시다!");
 
-			}else if(ht2[i].bmi > 25) {
+			}
+			else if(ht2[i].bmi > 25) {
 			System.out.print("Your BMI: " + ht2[i].bmi + "비만 입니다. 어디서 꿀꿀 소리가 들리네요. 당장 운동합시다!");
+
 			}
 		}
 		
@@ -76,11 +81,11 @@ public class Fitness2 {
 			
 			for(int j = 0; j < 2; j ++) {
 				
-				System.out.printf("%6s", ht2[i].info[j]);
-				System.out.printf("%4g", ht2[i].data[j]);
-				System.out.printf("%5g", ht2[i].bmi);
-			}
+				System.out.printf("%6s", ht2[i].info);
+				System.out.printf("%4d", ht2[i].data);
 				
+			}
+				System.out.printf("%5d", ht2[i].bmi);
 		}
 	}
 		

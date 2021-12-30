@@ -6,7 +6,6 @@ public class FitnessMain2 {
 		
 		Fitness2 fi = new Fitness2();
 		
-		fi.set();
 		fi.input();
 		fi.bmiMeasure();
 		fi.print();
