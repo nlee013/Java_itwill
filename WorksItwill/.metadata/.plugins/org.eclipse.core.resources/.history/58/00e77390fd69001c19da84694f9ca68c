@@ -1,0 +1,9 @@
+package com.score2;
+
+public class scoreMain {
+
+	public static void main(String[] args) {
+
+	}
+
+}

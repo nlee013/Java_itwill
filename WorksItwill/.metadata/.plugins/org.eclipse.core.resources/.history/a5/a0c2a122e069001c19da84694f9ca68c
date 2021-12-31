@@ -1,0 +1,35 @@
+package com.day9;
+
+//call by value
+//1)Stack 영역에 Heap영역으로 data가 넘어감(data가 넘어가서 연산되고 처리되는것)
+//2)값을 넘길 때 객체의 시작점 주소가 넘어감
+
+class Test{
+	
+	public int x = 10;
+	
+	//기본 생성자가 생략되어있음
+	
+	public void sub(int a) {
+		x += a;// x = x + a;
+	}
+	
+}
+public class Test44 {
+
+	public static void main(String[] args) {
+		
+		Test ob1 = new Test();
+		
+		//Call by Value
+		
+		int a = 20;
+		
+		System.out.println("Sub()Method 실행 전 x: "+ ob1.x);
+		
+		ob1.sub(a);
+		System.out.println("Sub()Method 실행 후 x: "+ ob1.x);
+
+	}
+
+}

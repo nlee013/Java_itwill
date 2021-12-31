@@ -1,0 +1,15 @@
+package com.day9;
+
+//상속(부모가 자식한테 주는 것)
+//조건
+//1) 부모꺼는 내꺼다
+//2) 부모가 private로 선언한 것은 상속 불가능
+public class Test45 {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}

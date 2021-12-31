@@ -1,0 +1,7 @@
+package com.score2;
+
+public class Ranking {
+
+	String name;
+	
+}

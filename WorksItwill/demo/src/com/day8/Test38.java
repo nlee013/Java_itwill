@@ -3,7 +3,7 @@ package com.day8;
 //1.new를 사용하지 않아도 알아서 메모리로 올라간다.
 //2.객체가 100개 생성 되어도 메모리 공간은 1개만 생성됨
 
-public class Test38 {
+public class Test38 {//왜 class 변수냐면 class 이름 Test38.a로 불러오기 때문
 	
 	public static int a = 10;//-> class변수 or class method는 class가 loading(실행)되는 순간
 							//메모리 할당이 이루어지며 [class 이름, 객체]를 통해 접근가능

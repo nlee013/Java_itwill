@@ -17,11 +17,13 @@ class Rect{
 	public int length() {
 		return (w*h)*2;
 	}
-	//method 중복 정의 (Overload/Overloading)
+	//method 중복 정의 (Overload/Overloading) 100자 내외로 기억해두기
 	//1개의 class 안에서 비슷한 역할을 하는 method의 이름은
 	//통일시키는 작업으로 메소드의 이름은 동일하지만
 	//괄호 속의 인수(매개변수)의 갯수나 인수의 자료형을 다르게 주면
 	//각각 다른 메소드로 인식을 한다
+	
+	//overwriting는 상속 관계에서 나타난다.
 
 	public void print(int a, double l) {
 		System.out.println("Width: " + w);

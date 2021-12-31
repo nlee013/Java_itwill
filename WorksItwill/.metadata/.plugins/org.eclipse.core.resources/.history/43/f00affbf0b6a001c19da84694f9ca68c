@@ -1,0 +1,16 @@
+package com.score2;
+
+public class ScoreMain2 {
+
+	public static void main(String[] args) {
+
+		Score2 ob1 = new Score2();
+		
+		Ranking ob2 = new Ranking();
+		
+		ob1.set();
+		ob1.input();
+		ob2.print();
+	}
+
+}

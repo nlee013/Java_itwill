@@ -1,4 +1,4 @@
-package com.score1;
+		package com.score1;
 
 import java.util.Scanner;
 
@@ -67,8 +67,7 @@ public class Score {
 				
 				if(rec[i].tot > rec[j].tot) {
 					rec[j].rank++;
-				}
-				else if(rec[i].tot < rec[j].tot) {
+				}else if(rec[i].tot < rec[j].tot) {
 					rec[i].rank++;
 					
 				}

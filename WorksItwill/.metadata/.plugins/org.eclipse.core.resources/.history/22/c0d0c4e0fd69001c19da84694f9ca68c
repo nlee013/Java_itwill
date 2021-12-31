@@ -1,0 +1,14 @@
+package com.score2;
+
+import java.util.Scanner;
+
+public class Score2 {
+
+	int inwon;
+	
+	Ranking[] rk;
+	
+	Scanner sc = new Scanner(System.in);
+	
+	
+}
