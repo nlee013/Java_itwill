@@ -1,0 +1,19 @@
+package com.day10;
+
+//가장 기본적인 method 공부하기
+
+public class Test52 {
+
+	public static void main(String[] args) {
+
+		String s1 = "Seoul, Busan, Degu";
+		String[] ss = s1.split(",");
+		//배열 : new 하거나 {,,,};방법이 있었다
+		
+		for(String s : ss) {
+			//System.err.print(s + " ");//-> 빨간색 글씨로 출력
+			System.out.print(s + " ");
+		}
+	}
+
+}

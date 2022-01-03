@@ -1,0 +1,18 @@
+package com.day10;
+
+import java.util.GregorianCalendar;
+
+//모든 class의 부모는 object
+//Class Object is the root of the class hierarchy. Every class has Object as a superclass.
+//All objects, including arrays, implement the methods of this class.
+
+public class Test48 {
+
+	public static void main(String[] args) {
+
+		//Calendar now = new GregorianCalendar();-> 나중에 interface 개념 알고 난 후 이해될 예정
+		
+		
+	}
+
+}

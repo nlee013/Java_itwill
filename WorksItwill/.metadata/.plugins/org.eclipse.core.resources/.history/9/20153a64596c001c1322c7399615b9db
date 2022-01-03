@@ -1,0 +1,12 @@
+package com.day10;
+
+//String을 도와주는 Class 2개 : StringBuffer, StringBuilder-> java.lang에 있음
+
+
+public class Test51 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

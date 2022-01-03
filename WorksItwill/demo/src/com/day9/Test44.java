@@ -1,8 +1,9 @@
 package com.day9;
 
 //call by value
-//1)Stack 영역에 Heap영역으로 data가 넘어감(data가 넘어가서 연산되고 처리되는것)
-//2)값을 넘길 때 객체의 시작점 주소가 넘어감
+//-> Stack 영역에 Heap영역으로 data가 넘어감(data가 넘어가서 연산되고 처리되는것)
+//call by reference(예시로 들어주신 남녀 썸-> 서로 똑같이 나눠가질수 없어서 같은 남자끼리 상대방 폰번호를 같게 나눔)
+//-> 값을 넘길 때 객체의 시작점 주소가 넘어감
 
 class Test{
 	

@@ -1,0 +1,38 @@
+package com.day10;
+
+class Test{
+	
+	private String title;
+	protected double area;
+	
+	public Test() {} //기본 생성자
+	
+	public Test(String title) {//overloading 생성자
+		this.title = title;
+	}
+	
+	public void write() {//일반 method
+		System.out.println(title + ":" + area);
+	}
+}
+
+class Circle extends Test{
+	
+	private int r;
+	protected static final double PI = 3.14;
+	//static 메모리에 알아서 올라감.
+	//final 상수. 정해진 값 절대 안바뀜
+	
+	public Circle(int r) {
+		
+	}
+}
+
+
+public class Test47 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

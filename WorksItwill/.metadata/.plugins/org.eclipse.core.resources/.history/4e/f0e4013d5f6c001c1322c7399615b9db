@@ -1,0 +1,12 @@
+package com.day10;
+
+//가장 기본적인 method 공부하기
+
+public class Test52 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

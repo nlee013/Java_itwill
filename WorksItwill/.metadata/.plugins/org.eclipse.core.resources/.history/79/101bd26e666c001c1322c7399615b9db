@@ -1,0 +1,48 @@
+package com.day10;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Test53 {
+
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("수식[3 + 5]?");//수식을 37 + 23로 만든다
+		String str = br.readLine();
+		
+		str = str.replaceAll("\\s", "");//공백을 null값으로 만듦
+		//System.out.println(str);//확인용
+		
+		//사용자가 입력한 연산자를 읽어옴
+		//1)정석
+		String[] oper = {"+", "-", "*", "/"};
+		for(String op : oper) {
+			
+			int pos = str.indexOf(op);
+		
+		//2)한 번에 합쳐서 이렇게도 사용함
+			/*for(String op : new String[] {"+", "-", "*", "/"}) {
+				
+				int pos = str.indexOf(op)
+			}*/
+			
+			if(pos > -1) {//반환값을 없을 때 -1 <꼭 암기>
+				
+				int num1 = Integer.parseInt(str.substring(0, pos)); //subString 사용하기
+				int num2 = Integer.parseInt(str.substring(pos + 1));
+				
+				//System.out.println(num1 + ":" + num2); //확인용
+				
+				int result = 0;
+				char oper = str.charAt(pos);
+			}
+			
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.day10;
+
+//String: string은 class이다(자료형이 아니다)
+//저장할 data는 방대하고 사용 빈도는 높기 때문에
+//class를 자료형 처럼 사용함
+
+public class Test49 {
+
+	public static void main(String[] args) {
+
+	}
+
+}
