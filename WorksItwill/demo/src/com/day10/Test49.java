@@ -6,6 +6,9 @@ package com.day10;
 
 //String data는 무조건 equals로 비교해야 됨
 //String은 불변의 법칙을 가짐: 한 번 메모리 상에 저장되면 수정, 삭제, 초기화 불가능
+
+//-> String은 class이므로 값을 비교할 때 무조건 equals
+
 public class Test49 {
 
 	public static void main(String[] args) {
@@ -22,9 +25,12 @@ public class Test49 {
 	
 	 System.out.println("ob1 == ob2: " + (ob1 == ob2));//true
 	 System.out.println("ob1 == ob3: " + (ob1 == ob3));//false
+	 //->주소 비교
 	 System.out.println("ob1.equals(ob3): " + ob1.equals(ob3));//true
-	 //-> 주소에 저장되어있는 값 비교
-	 //equals & to String 둘다  override된 method이다.
+	 //-> 주소에 저장되어있는 값 비교.
+	 //String의 equals는 overriding되었고 값을 비교함
+	 
+	 //equals & to String 둘다 override된 method이다.
 	 
 	 ob2 = "Korea";
 	 System.out.println("ob1 == ob2: " + (ob1 == ob2));
@@ -35,16 +41,13 @@ public class Test49 {
 	
 	 //주소번지가 가리킨 곳이 없을 때(서로 access하지 않을 때)
 	 //garbage collector이다(쓰레기 값)
-	 //쓰레기 값을 지우려면 method로 호출해서 명령을 내려야됨
+	 
+	 //쓰레기 값을 지우려면 method로 따로 호출해서 명령을 내려야됨
 	 
 	 ob2 = "Seoul";
 	 System.out.println("ob1 == ob2: " + (ob1 == ob2));
 
-	 System.out.println(ob2); 
-	 System.out.println(ob2.toString());
-	 //hash code가 안나오고
-	 //주소번지에 있는 자료형의 data를 보여줌 
-	  
+	 System.out.println(ob2);//hash code X(안나오고)
+	 System.out.println(ob2.toString());//주소번지에 저장되어 있는 자료형의 data를 보여줌   
 	}
-
 }

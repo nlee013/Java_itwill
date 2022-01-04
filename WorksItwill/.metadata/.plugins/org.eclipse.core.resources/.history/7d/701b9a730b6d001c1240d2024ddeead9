@@ -1,0 +1,13 @@
+package com.day11;
+
+public class Day11assign2 {
+
+	public Day11assign2() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

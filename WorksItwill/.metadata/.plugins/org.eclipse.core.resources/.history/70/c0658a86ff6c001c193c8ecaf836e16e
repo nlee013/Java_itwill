@@ -1,0 +1,11 @@
+package com.day11;
+
+//Wrapper class
+
+public class Test54 {
+
+	public Test54() {
+		
+	}
+
+}

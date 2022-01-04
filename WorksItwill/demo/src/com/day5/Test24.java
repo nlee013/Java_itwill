@@ -91,6 +91,7 @@ public class Test24 {
 				System.out.println();
 			}
 		}
+		
 		if(w%7 != 0) {
 			System.out.println();
 		}

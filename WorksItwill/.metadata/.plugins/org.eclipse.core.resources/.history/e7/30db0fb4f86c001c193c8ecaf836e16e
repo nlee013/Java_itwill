@@ -1,0 +1,64 @@
+package com.day10assign;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+class Result2{//이곳은 바꾸지 말기 : 부모 class의 print를 사용하기
+
+	public void print(String r) {
+
+		System.out.println(r);
+	}
+}
+
+class Calc2 extends Result{
+	
+	int n1, n2;
+	String n;
+	char op;
+	
+	public void input() throws IOException {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("두개의 수[5, 2]");
+		n = sc.next();
+		
+		String[] ss = n.split(",");
+		n1 = Integer.parseInt(ss[0]);
+		n2 = Integer.parseInt(ss[1]);
+		
+		System.out.print("연산자");
+		op = (char) System.in.read();
+	}
+	
+	public String calc() {
+		
+		int result = 0;
+		
+		switch(op) {
+		case '+':
+			result = n1 + n2; break;
+		case '-':
+			result = n1 - n2; break;
+		case '*':
+			result = n1 * n2; break;
+		case '/':
+			result = n1 / n2; break;
+		}
+		
+		return String.format("%d %c %d = %d", n1, op, n2, result);
+	}
+}
+
+public class Day10Q1Scanner {
+
+	public static void main(String[] args) {
+
+		Calc ob = new Calc();
+		ob.input();
+		String r = ob.Calcul();
+		ob.print(r);
+	}
+
+}

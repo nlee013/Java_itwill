@@ -1,0 +1,52 @@
+package com.day11;
+
+import java.io.WriteAbortedException;
+
+class Test{
+	
+	protected int a = 10, b = 20;
+	
+	public void write() {
+		
+		System.out.println("Super Class write()...");
+		System.out.println("a: " + a + "b: " + b);
+	}
+}
+
+class Demo extends Test{//Test class를 부모로 만듦
+	
+	protected int b = 30, c = 40;
+	
+	@Override
+	public void write() {
+		System.out.println("Sub class write()...");
+		System.out.println("a: " + a + ", b: " + b + ",c: " + c);// 10 30 40
+		System.out.println(", super.b: " + super.b);//20
+	}
+	
+	public void print1() {
+		
+		System.out.println("Sub Class print1()에서 write()호출...");
+		write();
+	}
+	
+	public void print2() {
+		
+		System.out.println("Sub Class print1()에서 write()호출...");
+		super.write();
+	}
+	
+}
+
+public class Test56 {
+
+	public static void main(String[] args) {
+
+		Demo ob = new Demo();
+		ob.write();
+		ob.print1();
+		ob.print2();
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.day11;
+
+//Singleton
+
+public class Test57 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

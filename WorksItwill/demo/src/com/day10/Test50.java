@@ -3,7 +3,8 @@ package com.day10;
 import org.omg.Messaging.SyncScopeHelper;
 
 //String을 도와주는 Class 2개 : StringBuffer, StringBuilder-> java.lang에 있음
-
+//StringBuffer: 동기화 O, 좀 더딤
+//StringBuilder:동기화 X, 빠름
 
 public class Test50 {
 
@@ -35,7 +36,7 @@ public class Test50 {
 		long start = System.nanoTime();//<- 좀 더 상세히 시간 값을 나눔
 		
 		StringBuffer str = new StringBuffer("A");//일반 class이므로 이렇게 작성하며,
-												 //class이름은 안에 작성
+												 //초기화를 문자로 해줌 "A".
 		
 		for(int i = 1; i <= 50000; i++) {
 			str.append("A");
@@ -55,7 +56,7 @@ public class Test50 {
 		
 		long start = System.nanoTime();
 		
-		StringBuilder str = new StringBuilder("A");
+		StringBuilder str = new StringBuilder("A");//java.lang에 있어서 import 안됨
 		
 		for(int i = 1; i <= 50000; i++) {
 			str.append("A");

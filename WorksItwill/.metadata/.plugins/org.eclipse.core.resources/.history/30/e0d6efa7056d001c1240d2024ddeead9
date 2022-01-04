@@ -1,0 +1,14 @@
+package com.day11;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class Test55 {
+
+	public static void main(String[] args) {
+
+		Calendar now = Calendar.getInstance();
+		Calendar no2 = new GregorianCalendar();
+	}
+
+}

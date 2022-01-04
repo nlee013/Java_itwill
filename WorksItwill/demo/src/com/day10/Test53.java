@@ -61,12 +61,7 @@ public class Test53 {
 				String sf = String.format("%d %c %d = %d", num1, oper2, num2,result);
 				
 				System.out.println(sf);
-				
 			}
-			
-			
 		}
-		
 	}
-
 }

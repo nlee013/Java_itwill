@@ -30,7 +30,7 @@ public class Test48 {//object의 method: equals(object) & to string()을 가장 많이
 		
 		System.out.println("ob1.equals(ob2): " + ob1.equals(ob2));//false
 		//값이 서로 비교
-		//-> equals는 TestA의 부모이고 Object는 equals의 부모이므로 extends Object가 생략됨
+		//-> equals는 TestA의 부모의 method이고 Object는 equals의 부모이므로 extends Object가 생략됨
 		
 		System.out.println("ob1: " + ob1);//메모리의 첫 번째 주소-> hash code
 		System.out.println("ob2: " + ob2);//메모리 주소

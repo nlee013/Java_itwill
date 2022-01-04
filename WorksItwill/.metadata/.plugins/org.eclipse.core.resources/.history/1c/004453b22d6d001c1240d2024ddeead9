@@ -1,0 +1,66 @@
+package com.day11;
+
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class Day11assign1 {
+
+	public static void main(String[] args) {
+
+		//년월을 입력받아 Calendar로 만년달력 만들기
+		
+		Scanner sc = new Scanner(System.in);
+		
+		//int[] months = {31, 28, 30, 31, 30, 31, 30, 31, 30, 31, 30, 31};
+		
+		Calendar cal = Calendar.getInstance();
+		int y, m, d, w;
+		
+//		int y = now.get(Calendar.YEAR);
+//		int m = now.get(Calendar.MONTH);
+//		
+//		int w = now.get(Calendar.DAY_OF_WEEK);
+		
+		do {
+			System.out.println("Type any year: ");
+			y = sc.nextInt();
+		}while(y < 1);
+		
+		do {
+			System.out.println("Type any month: ");
+			m = sc.nextInt();
+		}while(m < 1 || m > 12);
+		
+		//윤년
+//		if(y%4 == 0 && y%100 != 0 || y%400 == 0) {
+//			months[1] = 29;
+//		}
+		
+		//d = 0;
+		cal.set(y-1, m);
+		w = cal.get(Calendar.DAY_OF_WEEK);
+		
+		System.out.println("\n  Mon  Tus  Wed  Thu  Fri  Sat  Sun");
+		System.out.println("---------------------------------------");
+		
+		for(int i = 0; i < w-1; i++) {
+			System.out.println("\t");
+		}
+		
+		for(int i = 0; i < cal.getActualMaximum(Calendar.DAY_OF_MONTH); i++){
+			
+			if(w%7 != 0) {
+				System.out.print(i + "\t");
+			}else if(w%7 == 0) {
+				System.out.print(i);
+			}
+			w++;
+		}
+		if(w%7 !=1) {
+			System.out.println();
+		}
+		System.out.println("---------------------------------------");
+		
+	}
+
+}

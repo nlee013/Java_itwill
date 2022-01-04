@@ -1,0 +1,19 @@
+package com.day11;
+
+//final
+//instance 변수에 final을 붙이면 단 한번만 초기화 가능
+//method에 final 붙이면 override 불가능
+//class에 final을 붙이면 상속 불가능
+
+class TestA{
+
+	
+}
+
+public class Test58 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

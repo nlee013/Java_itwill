@@ -7,7 +7,7 @@ public class Test51 {
 
 	public static void main(String[] args) {
 
-		StringBuffer sb = new StringBuffer();
+		StringBuffer sb = new StringBuffer();//주소번지에 저장된 data를 보여줌
 		
 		sb.append("Seoul");
 		sb.append("Busan");
@@ -15,7 +15,7 @@ public class Test51 {
 		System.out.println(sb);
 		
 		String str = sb.toString();//to String은 string으로 바꿔라 라는 의미
-		System.out.println(str);
+		System.out.println(str);//쓰레기값이 생기지 않는다
 		
 		
 	}
