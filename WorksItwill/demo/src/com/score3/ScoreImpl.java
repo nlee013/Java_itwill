@@ -71,9 +71,14 @@ public class ScoreImpl implements Score{
 	public void print() {
 	//학번 이름 국어(성적) 영어(성적) 수학(성적) total average
 		
+		String[] title = {"  학번   Name   Korean   English   Mathematics   Total   Average"};
+		
 		for(int i = 0; i < inwon; i++) {
-			System.out.printf("학번:%4s 이름:%5s\n", rec[i].hak, rec[i].name);
-			System.out.printf("Korean:%4d(%2s) English:%4d(%2s) Mathematics:%4d(%2s)"
+			
+			System.out.println(title[i]);
+	
+			System.out.printf("%4s %5s %4d(%2s) %4d(%2s) %4d(%2s)"
+					, rec[i].hak, rec[i].name
 					, rec[i].kor, panjug(rec[i].kor)
 					, rec[i].eng, panjug(rec[i].eng)
 					, rec[i].mat, panjug(rec[i].mat));
