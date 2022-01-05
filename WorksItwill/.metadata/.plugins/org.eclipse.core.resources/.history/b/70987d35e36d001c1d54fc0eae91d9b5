@@ -1,0 +1,34 @@
+package com.day12;
+
+//Interface도 별도의 file로 만들 수 있다
+//무조건 override를 해야되기 때문에 public으로 설정
+
+interface Test{
+
+	//2개의 interface 만듦
+	public int total();
+	public void write();
+	
+}
+
+class TestImpl implements Test{
+
+	@Override
+	public int total() {
+		return 0;
+	}
+
+	@Override
+	public void write() {
+	}//내부적으로 상속. 구현
+	
+}
+
+
+public class Test64 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

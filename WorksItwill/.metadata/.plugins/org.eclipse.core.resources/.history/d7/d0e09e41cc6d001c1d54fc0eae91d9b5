@@ -1,0 +1,21 @@
+package com.day12;
+
+class TestA{
+	
+	public void print() {
+		System.out.println("A class...");
+	}
+}
+
+class TestB{
+	public void print() {
+		System.out.println("B class...");
+	}
+}
+public class Test61 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.score3;
+
+//반드시 구현
+public class ScoreImpl implements Score{
+
+}

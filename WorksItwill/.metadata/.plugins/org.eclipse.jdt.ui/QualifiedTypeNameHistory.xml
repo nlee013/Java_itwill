@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="com.score1.Score"/>
 <fullyQualifiedTypeName name="com.day8.Test38"/>
 <fullyQualifiedTypeName name="com.day8.Data"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="com.day8.Test41"/>
 <fullyQualifiedTypeName name="com.day8.RectA"/>
 <fullyQualifiedTypeName name="com.mbti.Mbti"/>
@@ -18,7 +17,6 @@
 <fullyQualifiedTypeName name="javax.swing.border.TitledBorder"/>
 <fullyQualifiedTypeName name="com.day10.Circle"/>
 <fullyQualifiedTypeName name="com.day10.Rect"/>
-<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
 <fullyQualifiedTypeName name="org.omg.Messaging.SyncScopeHelper"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
@@ -27,7 +25,16 @@
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+<fullyQualifiedTypeName name="com.day11.Sing"/>
+<fullyQualifiedTypeName name="java.io.WriteAbortedException"/>
+<fullyQualifiedTypeName name="com.day11.ShapeClass"/>
+<fullyQualifiedTypeName name="com.day11.Rect"/>
+<fullyQualifiedTypeName name="com.day11.Tri"/>
+<fullyQualifiedTypeName name="com.day11.SortInt"/>
+<fullyQualifiedTypeName name="com.day11.SortTest"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>

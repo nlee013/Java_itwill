@@ -35,7 +35,7 @@ public class Day11assign1 {
 		}
 		
 		for(int i = 1; i <= cal.getActualMaximum(Calendar.DAY_OF_MONTH); i++){
-			
+		//for(int i = 1; i <= cal.getActualMaximum(Calendar.DATE); i++){	
 			System.out.printf("%5d", i);
 			
 			w++;

@@ -1,0 +1,24 @@
+package com.day12;
+
+interface FruitA{
+	
+	String Won = "¿ø";
+	
+	public int getPrice();
+	public String getName();
+
+}
+
+interface ItemFruit extends Fruit{
+	
+	public String getItems();
+	
+}
+
+public class Test65 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

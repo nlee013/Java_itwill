@@ -1,0 +1,11 @@
+package com.day12;
+
+//Interface도 별도의 file로 만들 수 있다
+
+public class Test64 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

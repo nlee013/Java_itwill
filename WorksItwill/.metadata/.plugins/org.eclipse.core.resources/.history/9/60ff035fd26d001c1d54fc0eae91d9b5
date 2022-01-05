@@ -1,0 +1,12 @@
+package com.day12;
+
+//Interface
+//Abstract class의 일종으로 선언만 하고 정의(내용)이 없다
+//변수는 final variable(변수)만 선언가능.
+public class Test63 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

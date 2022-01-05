@@ -1,0 +1,20 @@
+package com.score3;
+
+//반드시 구현 -> implements
+public class ScoreImpl implements Score{
+
+	private int inwon;
+	private Record[] rec;
+	@Override
+	public void set() {
+	}
+
+	@Override
+	public void input() {
+	}
+
+	@Override
+	public void print() {
+	}
+
+}

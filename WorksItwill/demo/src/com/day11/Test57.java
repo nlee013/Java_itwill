@@ -20,10 +20,10 @@ public class Test57 {
 
 	public static void main(String[] args) {
 
-		Sing ob1 = Sing.getInstance();
+		Sing ob1 = Sing.getInstance();//ob1의 주소지
 		Sing ob2 = Sing.getInstance();
 		
-		if(ob1 == ob2)
+		if(ob1 == ob2)//주소 비교
 			System.out.println("동일한 객체...");
 		
 		//왜 동일한 객체인가?

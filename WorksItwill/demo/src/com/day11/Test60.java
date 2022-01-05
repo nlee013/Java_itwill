@@ -8,11 +8,13 @@ abstract class SortInt{
 	
 	public void sort(int[]value) {
 		
-		this.value = value;//여기서 value는 배열
+		//여기서 value는 배열
 		//주소를 서로 공유하는 것 call by reference
+		this.value = value;
 		
-		sorting();//형태만(자식과 같은 이름) 같음.
+		//형태만(자식과 같은 이름) 같음.
 		//자식 method를 사용한 것이 아님
+		sorting();
 		
 	}
 	

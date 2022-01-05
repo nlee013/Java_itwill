@@ -36,14 +36,23 @@ public class Day11assign2 {
 		do {
 			System.out.println("Type any date: ");
 			d = sc.nextInt();
-		}while(d < 1 || d > 31);
+		}while(d < 1 || d > 31);//윤달 조건 넣기
 		
 		do {
 			System.out.println("몇일 후?: ");
 			after = sc.nextInt();
 		}while(after < 1);
 		
+		//cal.set(y,m-1,d);
+		
 		w = cal.get(Calendar.DAY_OF_WEEK);
+		
+//		int[] months = {31, 28, 30, 31, 30, 31, 30, 31, 30, 31, 30, 31};
+//		
+//		if(y%4 == 0 && y%100 != 0 || y%400 == 0) {
+//			
+//			months[1] = 29;
+//		}
 		
 		String[] week = {"일", "월", "화", "수", "목", "금", "토"};
 	
@@ -57,9 +66,7 @@ public class Day11assign2 {
 		d = cal.get(Calendar.DATE);
 		w = cal.get(Calendar.DAY_OF_WEEK);
 
-		
 		System.out.println(after + "일 후: " + y + "년" + m + "월" + d + "일" + week[w-1] + "요일");
-
 	}
 
 }

@@ -49,7 +49,8 @@ public class Test56 {
 		
 		System.out.println("ob.b: " + ob.b);
 		System.out.println("((Test)ob).b: " + ((Test)ob).b);
-		//((Test)ob).b의 ob는 Test 부모로 형변환해서 Test가 되는 것
+		//자식을((Test)ob).b의 ob는 Test 부모로 형변환해서 Test가 되는 것
+		//-> upCast
 		System.out.println("--------");
 		((Test)ob).write();
 		//method는 override를 한 상태(부모 얼굴을 해도)에서 형 변환이 적용안됨
