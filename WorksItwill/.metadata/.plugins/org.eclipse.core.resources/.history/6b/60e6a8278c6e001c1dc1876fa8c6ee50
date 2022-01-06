@@ -51,10 +51,8 @@ class TestImpl implements Test{//자체적으로 변수/method 가질수 있음
 		
 		boolean flag = false;
 		
-		if(ob instanceof TestImpl) {
-	//instanceof 연산자 객체가 어떤 class인지 어떤 class를 상속 받았는지 확인. 종종 사용
-	//객체 + instanceof + class
-			
+		if(ob instanceof TestImpl) {//instanceof 객체 타입 확인. 종종 사용
+	   //객체 + instanceof + class
 			TestImpl t = (TestImpl)ob;//형변환 downcast 원래 자료형에 
 			
 			if(this.hak.equals(t.hak) && name.equals(this.name)) {
