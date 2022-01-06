@@ -1,0 +1,44 @@
+package com.day13;
+
+import java.util.Iterator;
+import java.util.Vector;
+
+public class Test72 {
+
+	private static final String[] city = {"Seoul", "Busan", "Degu", "Inchon", "Gwangju", "Daejeon", "Woolsan"};
+
+	public static void main(String[] args) {
+
+
+		//Generic : Collection의 자료형
+		Vector<String> v = new Vector<>();
+		
+		String str;
+		
+		System.out.println("Vector의 초기 용량: " + v.capacity());//10
+		
+		for(String s : city) {
+			v.add(s);
+		}
+		
+		Iterator<String> it = v.iterator();
+		
+		while(it.hasNext()) {
+			
+			str = it.next();
+			System.out.print(str + " ");
+		}
+		System.out.println();
+		System.out.println("...Data의 갯수: " + v.size());//7
+		
+		//Revise 수정
+		v.set(0, "Seoul");
+		v.set(1, "Busan");
+		
+		for(String s : v) {
+			System.out.print(s + " ");
+		}
+		System.out.println();
+	}
+
+}

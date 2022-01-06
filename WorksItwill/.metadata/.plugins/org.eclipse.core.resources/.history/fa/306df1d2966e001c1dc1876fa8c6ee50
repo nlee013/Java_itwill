@@ -1,0 +1,30 @@
+package com.day13;
+
+//4.내부 클래스 Inner class(익명의, 무명의 , Annoymous class)
+
+
+public class Test69 {
+	
+	public Object getTitle() {//return 값을 Object로 받는 것을 upCast. 받아 사용하려면 downCast
+		
+		return new Object() {
+			
+			@Override
+			public String toString() {
+				return "Annoymous class...";
+			}
+		};
+	}
+
+	public static void main(String[] args) {
+
+		Test69 ob = new Test69();
+		
+		//ob.getTitle(); -> 호출하면 반환값을 출력.
+		//String str = ob.getTitle(); ->ob.getTitle();에 error
+		Object str = ob.getTitle();//downCast
+		
+		System.out.println(str);
+	}
+
+}

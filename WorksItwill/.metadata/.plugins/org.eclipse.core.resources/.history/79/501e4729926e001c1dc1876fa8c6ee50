@@ -1,0 +1,36 @@
+package com.assignments;
+
+import java.util.Scanner;
+
+//인원수 10명 이내 점수 받아 오름차순 selection sort 구하기
+
+public class Day13Practice {
+
+	public static void main(String[] args) {
+
+		int inwon = 0;//인원수
+		String[] name = new String [inwon];
+		int[] score = new int [inwon];
+		
+		Scanner sc = new Scanner(System.in);
+		
+		//인원수 출력
+		do {
+			System.out.println("How many people do you want to type in here: ");
+			inwon = sc.nextInt();
+			
+		}while(inwon < 1 || inwon > 10);
+		
+		
+		//인원수
+		for(int i = 0; i < inwon; i++) {
+			
+			System.out.println("Type your name: ");
+			name[i] = sc.next();
+			
+			System.out.println("Type your score:");
+		}
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.day13;
+
+//1.(내부)Inner class : class 안에 class가 들어감을 의미
+//2. 
+//
+//
+
+class Outer1{
+	
+	static int a = 10;//자동 메모리화
+	int b = 20;//new가 있어야됨
+	
+	//class 안에 class 만들 수 있음 -> 나중에 종종 사용
+	public class Inner{
+		
+		int c = 30;//변수 선언 가능
+		
+		public void write() {//method 선언 가능
+			System.out.println(a);
+			System.out.println(b);
+			System.out.println(c);
+		}
+		
+	}
+	
+}
+
+public class Test66 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.day13;
+
+import java.util.Vector;
+
+public class Test71 {
+
+	private static final String[] city = {"Seoul, Busan, Degu, Inchon, Gwangju, Daejeon, Woolsan"};
+
+	public static void main(String[] args) {
+
+		Vector<String> v = new Vector<String>();
+		
+		for(String s : city) {
+			v.add(s);//add Ãß°¡
+			
+		}
+	}
+
+}

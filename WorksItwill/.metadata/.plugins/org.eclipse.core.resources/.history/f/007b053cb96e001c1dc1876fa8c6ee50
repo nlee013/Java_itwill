@@ -1,0 +1,8 @@
+package com.score4;
+
+public class Score4 {
+
+	public int input();
+	public void print();
+	
+}

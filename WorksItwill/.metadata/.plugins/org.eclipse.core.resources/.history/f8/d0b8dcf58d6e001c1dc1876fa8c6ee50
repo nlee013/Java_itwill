@@ -1,0 +1,14 @@
+package com.day13;
+
+//1.내부 Inner class : class 안에 class가 들어감을 의미
+//
+//
+//
+
+public class Test66 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

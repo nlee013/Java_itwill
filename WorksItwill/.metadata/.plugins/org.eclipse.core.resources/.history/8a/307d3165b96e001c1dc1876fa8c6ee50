@@ -1,0 +1,14 @@
+package com.score4;
+
+public class ScoreImpl implements Score4{
+
+	@Override
+	public int input() {
+		return 0;
+	}
+
+	@Override
+	public void print() {
+	}
+
+}
