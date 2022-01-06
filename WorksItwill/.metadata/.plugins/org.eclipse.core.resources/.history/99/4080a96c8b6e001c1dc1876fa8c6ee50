@@ -32,6 +32,8 @@ class TestImpl implements Test{//자체적으로 변수/method 가질수 있음
 		
 	}
 	
+	
+
 	@Override
 	public int total() {
 		return kor + eng;
@@ -45,18 +47,16 @@ class TestImpl implements Test{//자체적으로 변수/method 가질수 있음
 	}
 	
 	@Override//지금은 여기서 써도 되고 아니여도 됨.근데 Method여서
-	public boolean equals(Object ob) {
-		//ob1.equals(ob2).ob2의 오리지널 속성 = TestImpl//upcast
-		//ob1은 큰 클래스인 class TestImpl의 ob1이고 그 안에 equals가 여기 있다
+	public boolean equals(Object ob) {//ob1.equals(ob2).ob2의 오리지널 속성 = TestImpl//upcast
 		
 		boolean flag = false;
 		
-		if(ob instanceof TestImpl) {//instanceof 객체 타입 확인. 종종 사용
-	   //객체 + instanceof + class
+		if(ob instanceof TestImpl) {
+			
 			TestImpl t = (TestImpl)ob;//형변환 downcast 원래 자료형에 
 			
 			if(this.hak.equals(t.hak) && name.equals(this.name)) {
-			//this->ob1, equals->string의 equals
+				
 				flag = true;
 			}
 		}

@@ -59,7 +59,6 @@ public class Test63 {
 		
 		Fruit ob2 = ob1;//upcast<-Fruit가 내부적으로 class이므로 upcast 가능
 		System.out.println(ob2.getName());
-		
 		//System.out.println(ob2.getItems());
 		//->부모는 getItems이 없고 자식꺼를 사용못함.
 		//내용 없는 (형태만 있는) getItems 도 없기에 error남

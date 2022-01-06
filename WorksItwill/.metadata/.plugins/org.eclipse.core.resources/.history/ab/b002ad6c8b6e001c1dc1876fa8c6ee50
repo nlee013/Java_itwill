@@ -11,12 +11,11 @@ interface FruitA{
 
 }
 
-interface ItemFruit extends FruitA{
+interface ItemFruit extends Fruit{
 	
 	public String getItems();
 	
 }
-
 //class에 적용시킬 때는 implements
 class Orange implements ItemFruit/*, FruitA*/{//여러개 상속가능
 
@@ -76,7 +75,7 @@ public class Test65 {//여기 문법 중요함
 		int n = sc.nextInt();
 		
 		if(n == 1)
-			t.packing(new Orange());//나중에 new Orange();만 쓰는경우도 있음
+			t.packing(new Orange());
 		else if(n == 2)
 			t.packing(new Apple());
 		

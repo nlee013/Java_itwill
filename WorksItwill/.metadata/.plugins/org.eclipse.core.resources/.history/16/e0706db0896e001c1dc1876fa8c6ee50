@@ -35,7 +35,7 @@ public class Test62 {
 		SubTest ob1 = new SubTest();
 		System.out.println(ob1.b);//100
 		
-		SuperTest ob2 = ob1; //암시적 형변환.ob1을 ob2에 넣음-> 부모화됨->upCast
+		SuperTest ob2 = ob1; //ob1을 ob2에 넣음-> 부모화됨->upCast
 		System.out.println(ob2.b);//20
 		
 		System.out.println(ob2.hap());//310 ->hap() method는 자식꺼

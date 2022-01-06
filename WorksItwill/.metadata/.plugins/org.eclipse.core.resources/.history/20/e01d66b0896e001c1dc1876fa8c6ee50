@@ -6,14 +6,12 @@ package com.day12;
 //Interface를 구현하기(class를 상속하기)위해서는 implements 사용
 //Interface를 구현(상속)후, interface의 모든 method를 재정의 해야함(강제)
 //-> 안 할 시, compile error
-//interface 이름 변경시, 호출한 interface 이름 모두 변경해야됨
 
 //Interface가 다른 interface를 상속 받기 가능.
 //-> 이 경우: extends 사용
 //구현 할 때는 : implements
 
-//Class는 단일 상속. Interface는 다중구현(여러개 구현) 가능
-//-> implements A, B { 이런식으로 여러개 구현 가능
+//Class는 단일 상속. Interface는 다중상속(여러개 상속) 가능
 
 interface Fruit{
 
@@ -57,9 +55,8 @@ public class Test63 {
 		System.out.println(ob1.getName());
 		System.out.println(ob1.getPrice() + Fruit.Won);
 		
-		Fruit ob2 = ob1;//upcast<-Fruit가 내부적으로 class이므로 upcast 가능
+		Fruit ob2 = ob1;//upcast
 		System.out.println(ob2.getName());
-		
 		//System.out.println(ob2.getItems());
 		//->부모는 getItems이 없고 자식꺼를 사용못함.
 		//내용 없는 (형태만 있는) getItems 도 없기에 error남
