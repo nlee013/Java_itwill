@@ -51,7 +51,7 @@ class TestImpl implements Test{//자체적으로 변수/method 가질수 있음
 		
 		boolean flag = false;
 		
-		if(ob instanceof TestImpl) {//ob가 가지고 있는 자료형(TestImpl)을 구분
+		if(ob instanceof TestImpl) {
 	//instanceof 연산자 객체가 어떤 class인지 어떤 class를 상속 받았는지 확인. 종종 사용
 	//객체 + instanceof + class
 			
