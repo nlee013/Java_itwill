@@ -1,0 +1,6 @@
+package com.score5;
+
+public class ScoreImpl implements Score {
+	private Map 
+
+}

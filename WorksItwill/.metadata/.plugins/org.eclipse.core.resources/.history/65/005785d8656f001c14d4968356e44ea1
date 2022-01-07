@@ -1,0 +1,12 @@
+package com.day14;
+
+//Map이라는 Interface : Hashtable class, HashMap class
+//Hashtable : Vector와 동일
+//HashMap : ArrayList와 동일
+public class Test2day14 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

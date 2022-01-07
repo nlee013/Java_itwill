@@ -1,0 +1,6 @@
+package com.score5;
+
+public class ScoreVO {
+
+	private String name, kor, eng, mat, tot;
+}

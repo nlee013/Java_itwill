@@ -1,0 +1,24 @@
+package com.day14;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Test3day14 {
+
+	public static void main(String[] args) {
+
+		//Set : 중복값을 허용 X
+		Set<String> s = new HashSet<>();
+		
+		s.add("Seoul");
+		s.add("Busan");
+		s.add("Degu");
+		
+		System.out.println(s);
+		
+		s.add("Seoul");
+		
+		System.out.println(s);
+	}
+
+}

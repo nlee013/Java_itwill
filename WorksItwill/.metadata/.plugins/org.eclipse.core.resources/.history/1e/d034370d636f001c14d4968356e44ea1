@@ -1,0 +1,25 @@
+package com.day14;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Test1day14 {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> lists = new ArrayList<>();
+		
+		lists.add("Seoul");
+		lists.add("Busan");
+		lists.add("Degu");
+		
+		Iterator<String> it = lists.iterator();
+		
+		while(it.hasNext()) {
+			String str = it.next();
+			System.out.print(str + " ");
+		}
+		System.out.println();
+	}
+
+}

@@ -111,6 +111,11 @@ public class ScoreImpl implements Score4{
 				return vo1.getTot() < vo2.getTot()? 1:-1;//숫자 정렬방법
 				//return vo1.getHak().compareTo(vo2.getHak());//문자 비교방법
 				//< 는 큰 값을 왼쪽으로 보내겠다 (오름차순)
+				
+				//return vo1.getTot() < vo2.getTot()? 1:-1;에서 
+				//Compare은 조건이 true 일 때 1이므로 실행 sort,
+				//조건이 false 일 때 -1이므로 실행 X sort XS
+				
 			}
 		};
 		
