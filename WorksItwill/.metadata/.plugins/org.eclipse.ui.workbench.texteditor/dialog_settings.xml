@@ -8,11 +8,13 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="vo"/>
 			<item value="i"/>
 			<item value="0"/>
 			<item value="rec[0]"/>
 		</list>
 		<list key="replacehistory">
+			<item value="str"/>
 			<item value="i"/>
 			<item value="rec[i]"/>
 		</list>

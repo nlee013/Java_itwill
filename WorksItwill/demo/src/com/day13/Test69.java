@@ -13,12 +13,12 @@ import java.util.Calendar;
 
 public class Test69 {
 	
-	public Object getTitle() {//return 값을 Object로 받는 것을 upCast. 받아 사용하려면 downCast
+	public Object getTitle() {//method.return 값을 Object로 받는 것을 upCast. 받아 사용하려면 downCast
 		
-		return new Object() {
+		return new Object() {//보통 많이 interface가 들어감
 			
 			@Override
-			public String toString() {
+			public String toString() {//위 Object() class의 이름을 실행하지 않아서 toString은 자동으로 실행
 				return "Annoymous class...";
 			}
 		};

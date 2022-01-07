@@ -8,12 +8,13 @@ import java.util.Scanner;
 public class ScoreImpl implements Score4{
 
 	private List<ScoreVO> lists = new ArrayList<>();
-	
+	//Interface앞에 쓰고 뒤에 Class 를 많이 씀(둘이 바꿔도 무관하지만 이렇게 쓰는  것이 더 좋음)
 	Scanner sc = new Scanner(System.in);
 	@Override
 	public int input() {
 		
-		int result = 0;
+		int result = 0;//없어도 되는데 DB 사용 안하고 없을 땐 int를 void로 씀.
+		//DB사용할 때 int result = 0; 사용
 		
 		ScoreVO vo = new ScoreVO();
 		
@@ -69,9 +70,10 @@ public class ScoreImpl implements Score4{
 			ScoreVO vo = it.next();
 			
 			if(vo.getHak().equals(hak)) {//(hak).equalsvo.getHak()로 해도 됨
+				//hak을 가져올려면 앞에 getHak 써야됨
 				
-				System.out.println(vo.toString());
-				break;
+				System.out.println(vo.toString());//vo의 자체 출력기 toString
+				break;//실행 중인 코드를 빠져나와라. return은 아예 종료. stop임
 			}
 		}
 	}
@@ -92,7 +94,6 @@ public class ScoreImpl implements Score4{
 				
 				System.out.println(vo.toString());
 				//break;
-			
 		}
 		//System.out.println("");
 	}

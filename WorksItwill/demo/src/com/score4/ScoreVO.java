@@ -1,7 +1,7 @@
 package com.score4;
 //매우 중요
-//Value Object : Data를 저장
-//DTO : Data Transform Object
+//Value Object : Data를 저장. DB를 사용하지 않을때 VO
+//DTO : Data Transform Object. DB를 사용 할 때 DTO
 
 public class ScoreVO {
 	
@@ -53,8 +53,6 @@ public class ScoreVO {
 		this.mat = mat;
 	}
 	
-	
-	
 	public int getTot() {
 		return kor + eng + mat;
 	}
@@ -64,7 +62,8 @@ public class ScoreVO {
 	}
 
 	@Override
-	public String toString() {
+	public String toString() {//Object의 toString Override.Equals도 가능하지만 같냐? 비교하기 때문에
+		//toString을 많이 사용함
 		
 		if(hak == null || name == null) {
 			return null;

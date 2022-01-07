@@ -4,6 +4,7 @@ repositories/file\:_D\:_Itwill_eclipse_.eclipseextension/enabled=true
 repositories/file\:_D\:_Itwill_eclipse_.eclipseextension/isSystem=true
 repositories/file\:_D\:_Itwill_eclipse_.eclipseextension/name=D\:\\Itwill\\eclipse\\.eclipseextension
 repositories/file\:_D\:_Itwill_eclipse_.eclipseextension/provider=
+repositories/file\:_D\:_Itwill_eclipse_.eclipseextension/suffix=eclipse
 repositories/file\:_D\:_Itwill_eclipse_.eclipseextension/type=org.eclipse.equinox.p2.extensionlocation.metadataRepository
 repositories/file\:_D\:_Itwill_eclipse_.eclipseextension/uri=file\:/D\:/Itwill/eclipse/.eclipseextension
 repositories/file\:_D\:_Itwill_eclipse_.eclipseextension/version=1

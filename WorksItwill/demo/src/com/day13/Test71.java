@@ -9,7 +9,8 @@ public class Test71 {
 
 	public static void main(String[] args) {
 
-		Vector<String> v = new Vector<String>();
+		Vector<String> v = new Vector<String>();//Vector에 String만 담는다
+		//앞에 썼으면, new Vector<String>();에 <String>의 String 안써도 됨
 		
 		for(String s : city) {
 			
@@ -37,20 +38,27 @@ public class Test71 {
 		}
 		System.out.println();
 		
-		//확장 for
-		for(String s : v) {
+		//확장 for문(배열 때문에)을 더 자주 사용 예정
+		for(String s : v) {//:은 구분자
 			System.out.print(s + " ");
 		}
 		System.out.println();
 		
-		//Iterator(반복자)//java의 interface는 저장소로 많이 사용함
+		//전용 출력기 -> Iterator(반복자)//java의 interface는 저장소로 많이 사용함
 		Iterator<String> it = v.iterator();//data가 많을 수록 더 빨리 출력됨
+		//여기 있는 it = v.iterator();는 한 번 꺼내쓰면 끝.
 		
 		while(it.hasNext()) {//it의data 있을 때가지 돌려라. 몇개인지 모를 때 while문
 			
-			str = it.next();//read-> next는 highlight bar 
+			str = it.next();//read-> data 꺼내와라.
+			//next는 highlight bar가 맨 위(BOF)에 떠서 next누르면 하나씩 내려가 data 읽어옴 
+			
+			System.out.print(str + " ");
+		}
+		System.out.println("------------");
+		while(it.hasNext()) {
+			str = it.next();
 			System.out.print(str + " ");
 		}
 	}
-
 }
