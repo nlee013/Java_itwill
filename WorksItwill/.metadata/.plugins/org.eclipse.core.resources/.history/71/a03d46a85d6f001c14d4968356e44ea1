@@ -3,7 +3,6 @@ package com.score4;
 public interface Score4 {//¾à°£ÀÇ °­Á¦¼ºÀÌ ¶ä//¿©±â¿¡ ¸¸µé¸é ´Ù¸¥°÷¿¡ override ÇØÁà¾ßµÊ
 
 	public int input();
-	
 	public void print();
 	public void searchHak();//ÇÐ¹ø °Ë»ö
 	public void searchName();
@@ -11,6 +10,6 @@ public interface Score4 {//¾à°£ÀÇ °­Á¦¼ºÀÌ ¶ä//¿©±â¿¡ ¸¸µé¸é ´Ù¸¥°÷¿¡ override Ç
 	//2021-01-07-±Ý
 	public void descSortTot();//ÃÑÁ¡ ³»¸²Â÷¼ø
 	public void ascSortHak();//ÇÐ¹ø ¿À¸§Â÷¼ø
-	public void deleteHak();//ÇÐ¹ø »èÁ¦
+	
 	
 }

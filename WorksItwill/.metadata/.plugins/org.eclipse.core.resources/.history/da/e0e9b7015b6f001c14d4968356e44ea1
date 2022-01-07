@@ -1,8 +1,6 @@
 package com.score4;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
@@ -41,7 +39,7 @@ public class ScoreImpl implements Score4{
 	}
 
 	@Override
-	public void print() {//비교 없이 순수하게 출력하는 코딩
+	public void print() {
 		
 		Iterator<ScoreVO> it = lists.iterator();
 		
@@ -100,59 +98,4 @@ public class ScoreImpl implements Score4{
 		//System.out.println("");
 	}
 
-	@Override//총점은 크다 작다 비교 가능
-	public void descSortTot() {//총점 내림차순
-		
-		//무명의 Anonymous class
-		Comparator<ScoreVO> comp = new Comparator<ScoreVO>() {
-
-			@Override
-			public int compare(ScoreVO vo1, ScoreVO vo2) {
-				return vo1.getTot() < vo2.getTot()? 1:-1;//숫자 정렬방법
-				//return vo1.getHak().compareTo(vo2.getHak());//문자 비교방법
-				//< 는 큰 값을 왼쪽으로 보내겠다 (오름차순)
-			}
-		};
-		
-		//정렬//정렬 방법을 쓰기위해 사용.
-		
-		Collections.sort(lists, comp);//(lists, 정렬방법)
-		
-		//method 안에 method 호출가능
-		print();
-	}
-
-	@Override
-	public void ascSortHak() {
-		
-		Comparator<ScoreVO> comp = new Comparator<ScoreVO>() {
-
-			@Override
-			public int compare(ScoreVO vo1, ScoreVO vo2) {
-				//return vo1.getTot() < vo2.getTot()? 1:-1;//숫자 정렬방법
-				return vo1.getHak().compareTo(vo2.getHak());//문자 비교방법
-			}
-		};
-		
-		Collections.sort(lists, comp);//(lists, 정렬방법)
-		
-		print();
-	}
-
-	@Override
-	public void deleteHak() {
-		
-		System.out.println("Type 학번 you want to delete in here: ");
-		String hak = sc.next();
-		
-		Iterator<ScoreVO> it = lists.iterator();
-		while(it.hasNext()) {
-		ScoreVO vo = it.next();
-		
-		if(vo.getHak().equals(hak))
-			
-			lists.remove(vo);//lists가 원본 data 이므로. 꺼낸 vo를 지우기.
-			break;
-		}
-	}
 }

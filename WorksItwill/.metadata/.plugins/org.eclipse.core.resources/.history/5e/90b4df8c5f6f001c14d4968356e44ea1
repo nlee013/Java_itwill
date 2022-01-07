@@ -16,7 +16,7 @@ public class ScoreMain {
 			
 			do {
 				System.out.println("Choose one of 1) Input 2) Print 3) Search 학번 4) Search Name"
-									+  "5) Total 정렬 6) 학번 정렬 7)Delete 학번 8)Exit: ");
+									+  "5) Total 정렬 6) 학번 정렬 7) Delete 학번 8)Exit: ");
 				ch = sc.nextInt();
 			}while(ch < 1);
 			
