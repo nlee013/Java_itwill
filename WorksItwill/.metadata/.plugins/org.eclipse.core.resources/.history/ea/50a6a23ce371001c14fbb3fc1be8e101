@@ -1,0 +1,109 @@
+package com.naver;
+//과제 : List Collection으로 회원가입 만들기
+//메뉴: 회원가입, 회원 전체 출력, 아이디 검색
+//조건: 회원 가입 시 아이디는 8~15자 이내, 영문자 숫자 혼용
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+public class NaverImpl implements Naver {
+
+	private List<NaverVO> lists = new ArrayList<NaverVO>();
+	
+	Scanner sc = new Scanner(System.in);
+	
+	@Override
+	public int input() {
+		
+		int result = 0;
+		
+		NaverVO vo = new NaverVO();
+		
+		System.out.print("Create an ID: ");
+		vo.setName(sc.next());
+		
+		System.out.print("Type your name: ");
+		vo.setName(sc.next());
+		
+		System.out.print("Create Password: ");
+		vo.setPw1(sc.next());
+		
+		System.out.print("Check upper Password: ");
+		vo.setPw2(sc.next());
+		
+		System.out.print("Press a number if your gender is 1) Female 2)Male: ");
+		vo.setGender(sc.nextInt());
+		
+		System.out.print("Type your birthday [YYYY/MM/DD]: ");
+		vo.setBirth(sc.nextInt());
+		
+		System.out.println("Type your email: ");
+		vo.setEmail(sc.next());
+		
+		System.out.println("Type your mobile number: ");
+		vo.setTel(sc.nextInt());
+		
+		lists.add(vo);
+		
+		return result;
+	}
+
+	@Override
+	public void searchId() {
+		
+		System.out.print("Type an ID to search: ");
+		String id = sc.next();
+		
+		Iterator<NaverVO> it = lists.iterator();
+		
+		while(it.hasNext()) {
+			
+			NaverVO vo = it.next();
+			
+			if(vo.getId().equals(id)) {
+				
+				System.out.println(vo.toString());
+				break;
+			}
+		}
+	}
+
+	@Override
+	public void searchPw() {
+	}
+
+	@Override
+	public void gender() {
+	}
+
+	@Override
+	public void name() {
+	}
+
+	@Override
+	public void email() {
+	}
+
+	@Override
+	public void brith() {
+	}
+
+	@Override
+	public void tel() {
+	}
+
+	@Override
+	public void print() {
+		
+		Iterator<NaverVO> it = lists.iterator();
+		
+		while(it.hasNext()) {
+			
+			NaverVO vo = it.next();
+			System.out.println(vo.toString());
+		}
+	}
+
+}

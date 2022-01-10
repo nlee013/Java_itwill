@@ -1,0 +1,12 @@
+package com.day15;
+
+//예외 처리 : Exception 사용하기
+
+
+public class Test2day15 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

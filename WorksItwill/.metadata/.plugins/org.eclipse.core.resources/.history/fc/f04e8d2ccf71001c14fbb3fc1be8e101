@@ -1,0 +1,24 @@
+package com.excep;
+
+public class OperationAuthenticator {
+
+	public void inputFormat(String str) throws MyException {
+		
+		String temp[] = str.split(",");
+		
+		if(temp.length !=2) {//temp의 배열의 개수가 2개가 아니면 안되기에 
+			
+			//강제 에러 발생시키기
+			throw new MyException("숫자 입력 오류!" + str);//생성자 overloading함
+	//여기서 에러가 발생되면 MyException으로 보내기 위해서 따로 MyException class를 만든 것.
+		}
+	}
+	
+	public void number(String str) {
+		
+	}
+	
+	public void operator(char ch) {
+		
+	}
+}

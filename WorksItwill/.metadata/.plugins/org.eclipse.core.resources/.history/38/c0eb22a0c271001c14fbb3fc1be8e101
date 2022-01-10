@@ -1,0 +1,5 @@
+package com.excep;
+
+public class MyException {
+
+}

@@ -1,0 +1,80 @@
+package com.day15;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+
+//예외를 의도적으로 발생 시키는 방법
+
+public class Test3day15 {
+
+	public static String getOper() {//연산자 받는 코드
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String oper = null;
+		
+		try {
+			System.out.println("연산자?: ");
+			oper = br.readLine();
+			
+			if(!oper.equals("+") && !oper.equals("-") &&
+			   !oper.equals("*") && !oper.equals("/")) {
+				
+				//exception은 class.
+				//사용자 정의 오류
+				throw new Exception("연산자 입력 오류!!");
+				
+			}
+			
+		} catch (Exception e) {
+			
+		}
+		
+		return oper;//연산자를 반환시켜줘야되니까
+	}
+	
+	public static void main(String[] args) {
+		
+		BufferedReader br = new BufferedReader(InputStreamReader(System.in));
+		
+		int num1, num2, result;
+		String oper;
+		
+		try {
+			System.out.println("First nuebr: ");
+			num1 = Integer.parseInt(br.readLine());
+			
+			System.out.println("Second number: ");
+			num2 = Integer.parseInt(br.readLine());
+			
+			oper = Test3day15.getOper();
+			
+			result = 0;
+			
+			if(oper.equals("+")) {
+				
+				result = num1 + num2;
+			}else if(oper.equals("-")) {
+				result = num1 - num2;
+			}else if (oper.equals("*")) {
+				result = num1*num2;
+			}else if (oper.equals("/")) {
+				result = num1/num2;
+			}
+			
+			System.out.printf("%d %s %d = %d\n", num1, oper, num2, result);
+			
+		} catch (Exception e) {
+			System.out.println(e.toString());
+		}
+
+	}
+
+	private static Reader InputStreamReader(InputStream in) {
+		return null;
+	}
+
+	
+
+}

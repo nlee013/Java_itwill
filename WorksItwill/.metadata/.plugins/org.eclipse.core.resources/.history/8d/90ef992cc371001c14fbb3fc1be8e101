@@ -1,0 +1,18 @@
+package com.excep;
+
+//예외처리 연습
+public class MyException extends Exception{//Exception을 상속받는 class
+
+	//Exception처럼 큰 것을 상속 받았을 때 공간을 만들라고
+	//노란줄이 뜨면 첫번째 줄 누르면 생기는 것
+	//private static final long serialVersionUID = 1L;
+	
+	public MyException(String msg) {
+		
+		System.out.println("");
+	}
+	
+	
+	
+
+}

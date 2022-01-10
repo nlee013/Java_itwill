@@ -1,0 +1,12 @@
+package com.naver;
+
+public interface Naver {
+
+	public int input();
+	public void searchId();
+	public void searchPw();
+	
+	public void gender();
+	public void name();
+	
+}

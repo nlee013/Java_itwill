@@ -1,0 +1,41 @@
+package com.naver;
+//과제 : List Collection으로 회원가입 만들기
+//메뉴: 회원가입, 회원 전체 출력, 아이디 검색
+//조건: 회원 가입 시 아이디는 8~15자 이내, 영문자 숫자 혼용
+
+public class NaverImpl implements Naver {
+
+	@Override
+	public int input() {
+		return 0;
+	}
+
+	@Override
+	public void searchId() {
+	}
+
+	@Override
+	public void searchPw() {
+	}
+
+	@Override
+	public void gender() {
+	}
+
+	@Override
+	public void name() {
+	}
+
+	@Override
+	public void email() {
+	}
+
+	@Override
+	public void brith() {
+	}
+
+	@Override
+	public void tel() {
+	}
+
+}

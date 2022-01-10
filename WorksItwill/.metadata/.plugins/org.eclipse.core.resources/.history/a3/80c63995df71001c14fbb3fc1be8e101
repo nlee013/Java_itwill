@@ -1,0 +1,13 @@
+package com.naver;
+
+public class NaverVO {
+
+	private String id, name, pw1, pw2, email;
+	private int gender, birth, tel;
+	
+	public NaverVO() {
+		
+	}
+	
+	
+}
