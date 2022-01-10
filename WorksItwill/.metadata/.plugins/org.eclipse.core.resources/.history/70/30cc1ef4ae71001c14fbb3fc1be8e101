@@ -82,10 +82,7 @@ public class ScoreImpl implements Score {
 			if(hMap.containsKey(hak)) {
 			
 				hMap.remove(hak);
-				System.out.println("삭제 성공!!!");
-				//break;
-			}else{
-				System.out.println("삭제 실패!!!");
+				break;
 			}
 		}
 		
@@ -98,16 +95,11 @@ public class ScoreImpl implements Score {
 		
 		String hak = sc.next();
 		
-		if(!searchHak(hak)){
-			System.out.println("수정을 실패 했습니다!!");
-			return;			
-		}
-		
 		Iterator<String> it = hMap.keySet().iterator();
 		
 			ScoreVO vo = hMap.get(hak);
 			
-			//if(hMap.containsKey(hak)) {
+			if(hMap.containsKey(hak)) {
 			
 				System.out.println("Type your Korean score: ");//50
 				vo.setKor(sc.nextInt());
@@ -122,7 +114,7 @@ public class ScoreImpl implements Score {
 				
 				System.out.println("수정을 성공했습니다!");
 			}
-	//}
+	}
 
 	@Override
 	public void findHak() {//searchHak 비교
@@ -132,21 +124,12 @@ public class ScoreImpl implements Score {
 		
 		Iterator<String> it = hMap.keySet().iterator();
 		
-			/*ScoreVO vo = hMap.get(hak);
+			ScoreVO vo = hMap.get(hak);
 		
 			if(hMap.containsKey(hak)) {
 			
 				System.out.println(vo.toString());
-			}*/
-		
-		if(!searchHak(hak)){
-			System.out.println("학번이 존재하지 않습니다.검색 실패!!!");
-			return;
-		}
-
-		ScoreVO vo = hMap.get(hak);
-		System.out.println(hak + vo.toString());
-		
+			}
 	}
 
 	@Override
@@ -159,25 +142,17 @@ public class ScoreImpl implements Score {
 		
 		Iterator<String> it = hMap.keySet().iterator();
 		
-		//이름 검색에 실패할 때 boolean 쓰기
-		boolean flag = false;
-		
 		while(it.hasNext()) {
 			
 			String hak = it.next();
+			
 			ScoreVO vo = hMap.get(hak);
 			
 			if(vo.getName().equals(name)) {
 				
 				System.out.println(hak + " " + vo.toString());
-				flag = true;
 			}
 			
-		}
-		if(!flag) {
-			System.out.println("검색에 실패했습니다. 현재 입력하신 이름이 존재하지 않습니다.");
-		}else {
-			System.out.println("검색에 성공하였습니다!");
 		}
 	}
 

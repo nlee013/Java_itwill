@@ -73,7 +73,7 @@ public class Test2day14 {
 		
 		while(it.hasNext()) {
 			
-			String key = it.next();//보통은 highlight bar 다 읽어오지만, it.next();는 key만 읽어옴.
+			String key = it.next();//보통은 hight bar 다 읽어오지만, it.next();는 key만 읽어옴.
 			String value = h.get(key);//value 값을 가져온다.(value값을 읽어옴)
 			
 			System.out.println(key + ":" + value);

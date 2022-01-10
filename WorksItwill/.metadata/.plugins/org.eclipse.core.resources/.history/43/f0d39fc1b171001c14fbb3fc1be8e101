@@ -27,7 +27,7 @@ public class Test3day14 {
 		
 		System.out.println("--------------");
 		
-		//Stack: Interface이다. java.util에 있음. 잘 안쓰임
+		//Stack: Interface이다. java.util에 있음
 		
 		Stack<String> st = new Stack<>();
 		
@@ -37,8 +37,8 @@ public class Test3day14 {
 		st.add("Degu");//add도 가능
 		
 		while(!st.empty()) {//!st.empty()data가 있을 때까지 실행해라
-			System.out.println(st.pop());//pop()라는 명령어로 입력해라
-			}	
+			System.out.println(st.pop());
+		}	
 		System.out.println("---------------");
 		
 		//Queue
@@ -98,7 +98,7 @@ public class Test3day14 {
 		}
 		System.out.println("\n-------------");
 		
-		Arrays.sort(str);//자리 바꿈
+		Arrays.sort(str);
 		for(String ss : str) {
 			System.out.print(ss + " ");
 		}

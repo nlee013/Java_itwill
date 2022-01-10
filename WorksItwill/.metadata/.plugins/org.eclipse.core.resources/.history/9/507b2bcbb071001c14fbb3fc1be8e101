@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 //Map이라는 Interface : Hashtable class, HashMap class
 //Hashtable : Vector와 동일
-//HashMap : ArrayList와 동일. 동기화X -> 더 빠름
+//HashMap : ArrayList와 동일
 
 //Map<key, value>
 //Key: 중복값을 가질 수 없음.태생이 중복값 인정 X.
@@ -17,8 +17,7 @@ import java.util.Iterator;
 //Map에 사용되는 key 값이 set이고 set은 iterator가 있어서 그걸 빌려서 씀
 //그러므로 Map은 set의 도움으로(우회도로) iterator를 사용할 수 있음
 //put(key, 값) : 추가
-//it.next(); -> key를 읽음. 이 key를 가지고 get한테 읽어내게 함.
-//get(key) :  data를 읽기. key를 먼저 읽고 값을 읽음
+//get(key, 값) :  data를 읽기. key를 먼저 읽고 값을 읽음
 
 //Value: 
 public class Test2day14 {
@@ -73,7 +72,7 @@ public class Test2day14 {
 		
 		while(it.hasNext()) {
 			
-			String key = it.next();//보통은 highlight bar 다 읽어오지만, it.next();는 key만 읽어옴.
+			String key = it.next();//보통은 hight bar 다 읽어오지만, it.next();는 key만 읽어옴.
 			String value = h.get(key);//value 값을 가져온다.(value값을 읽어옴)
 			
 			System.out.println(key + ":" + value);

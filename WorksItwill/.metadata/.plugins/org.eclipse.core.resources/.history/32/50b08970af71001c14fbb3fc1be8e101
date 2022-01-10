@@ -159,8 +159,8 @@ public class ScoreImpl implements Score {
 		
 		Iterator<String> it = hMap.keySet().iterator();
 		
-		//이름 검색에 실패할 때 boolean 쓰기
-		boolean flag = false;
+		//
+		blooean flag = false;
 		
 		while(it.hasNext()) {
 			
@@ -170,14 +170,8 @@ public class ScoreImpl implements Score {
 			if(vo.getName().equals(name)) {
 				
 				System.out.println(hak + " " + vo.toString());
-				flag = true;
 			}
 			
-		}
-		if(!flag) {
-			System.out.println("검색에 실패했습니다. 현재 입력하신 이름이 존재하지 않습니다.");
-		}else {
-			System.out.println("검색에 성공하였습니다!");
 		}
 	}
 

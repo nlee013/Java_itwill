@@ -98,7 +98,7 @@ public class Test3day14 {
 		}
 		System.out.println("\n-------------");
 		
-		Arrays.sort(str);//ÀÚ¸® ¹Ù²Þ
+		Arrays.sort(str);
 		for(String ss : str) {
 			System.out.print(ss + " ");
 		}
