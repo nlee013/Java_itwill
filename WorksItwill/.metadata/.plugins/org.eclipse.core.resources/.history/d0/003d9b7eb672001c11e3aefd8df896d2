@@ -1,0 +1,51 @@
+package com.day17;
+
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.Reader;
+import java.io.Writer;
+import java.util.Scanner;
+
+class Random{
+	
+	Scanner sc = new Scanner(System.in);
+	
+	private static String[] name =
+			{"Àü»ó¿ø","¹Ú  ¹ü","±èÂùÁÖ","ÁøÇöÁÖ","³²½ÂÀº",
+			"¹Ú°¡À±","¼­µ¿Çõ","¾ç¼¼¸®","±èÃ¢ÈÆ","ÀÌÁÖÇö",
+			"¿ÕÇý¹Î","ÀÌÁ¾¿ø","ÀåÇÏÀº","±è¼ºÀç","Ã¤Çö¿ì",
+			"ÀÌÀ±Àç","Àü¼º´ö","ÀÌ³ª¿µ","¹è½ÂÈ¯","ÀÌÇÑ¼Ö"};
+	
+	
+	public void random() {
+		
+		String str;
+		int inwon = 0;
+		
+		do {
+			System.out.print("´Ê°Ô±îÁö °øºÎÇÒ »ç¶÷ ÀÎ¿ø¼ö?: ");
+			str = sc.next();
+			
+		}while(inwon >21 || inwon <1);	
+		
+		Random r = new Random();
+		
+		for(int i = 0; i < name.length; i ++) {
+			r.name[i] = sc.next();
+		}
+	}
+	
+	
+	
+}
+
+public class Day16Assign {
+
+	public static void main(String[] args) {
+
+		
+		
+		
+	}
+
+}

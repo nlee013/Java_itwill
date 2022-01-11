@@ -1,0 +1,21 @@
+package com.day17;
+
+class Random{
+	
+	private static String[] name =
+			{"전상원","박  범","김찬주","진현주","남승은",
+			"박가윤","서동혁","양세리","김창훈","이주현",
+			"왕혜민","이종원","장하은","김성재","채현우",
+			"이윤재","전성덕","이나영","배승환","이한솔"};
+}
+
+public class Day16Assign {
+
+	public static void main(String[] args) {
+
+		
+		
+		
+	}
+
+}
