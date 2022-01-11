@@ -3,7 +3,7 @@ package com.day17;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Day16Assign implements	Runnable{
+public class Day16Assign implements Runnable{
 	
 	private static String[] name =
 		{"전상원","박  범","김찬주","진현주","남승은",
@@ -14,8 +14,7 @@ public class Day16Assign implements	Runnable{
 	private int[] type;
 	
 	public void RandomName(String[] name) {
-		
-		this.name = name;
+		this.name = Day16Assign.name;
 	}
 	
 	public void input() {
@@ -36,18 +35,35 @@ public class Day16Assign implements	Runnable{
 		
 		while(i < inwon) {
 			
-			type[i] = rd.nextInt(20) + 1;
+			type[i] = rd.nextInt(20);
 			
 			for(int j = 0; j < i; j++) {
 				
 				if(type[i] == type[j]) {
-					
 					i--;
 					break;
 				}
 			}
 			i++;
 		}
+	}
+	
+	@Override
+	public void run() {
+		
+		System.out.println("고민중");
+		
+		int i = 0;
+		
+		while(i < 21) {
+			System.out.print(".");
+		}
+		try {
+			Thread.sleep(100);
+		} catch (Exception e) {
+			
+		}
+		i++;
 	}
 	
 	public void print() {
@@ -59,27 +75,10 @@ public class Day16Assign implements	Runnable{
 			System.out.printf("%d번 공부자: %s \n", (i + 1), name[type[i]]);
 		}
 	}
-	@Override
-	public void run() {
-		
-		System.out.println("고민중");
-		
-		int i = 0;
-		
-		while(i < 21) {
-			System.out.print(".");
-			
-			try {
-					Thread.sleep(100);
-				} catch (Exception e) {
-		}
-		i++;
-		}
-	}	
+	
 	public static void main(String[] args) {
 		
 		Day16Assign ri = new Day16Assign();
-		
 		ri.input();
 		ri.run();
 		ri.print();

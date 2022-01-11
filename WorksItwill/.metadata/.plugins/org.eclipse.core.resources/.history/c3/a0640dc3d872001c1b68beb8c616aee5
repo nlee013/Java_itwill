@@ -43,7 +43,7 @@ class MyRandom extends Thread{
 		
 		
 			//Random rd = new Random();
-			/*while(type[] < inwon) {
+			while(type[] < inwon) {
 				
 				type[] = rd.toString();
 				
@@ -51,7 +51,7 @@ class MyRandom extends Thread{
 					
 					name[i] = sc.next();
 				}
-			}	*/
+			}	
 	}
 	
 	

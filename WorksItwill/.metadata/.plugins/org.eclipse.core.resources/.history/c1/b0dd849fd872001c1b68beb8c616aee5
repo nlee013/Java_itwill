@@ -3,7 +3,7 @@ package com.day17;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Day16Assign implements	Runnable{
+public class Day16Assign extends Thread{
 	
 	private static String[] name =
 		{"전상원","박  범","김찬주","진현주","남승은",
@@ -14,8 +14,7 @@ public class Day16Assign implements	Runnable{
 	private int[] type;
 	
 	public void RandomName(String[] name) {
-		
-		this.name = name;
+		this.name = Day16Assign.name;
 	}
 	
 	public void input() {
@@ -23,7 +22,7 @@ public class Day16Assign implements	Runnable{
 		Scanner sc = new Scanner(System.in);
 		Random rd = new Random();
 		
-		int inwon, i = 0;
+		int inwon, i;
 		
 		do {
 			System.out.println("공부 늦게까지 하고 갈 인원수?: ");
@@ -32,16 +31,12 @@ public class Day16Assign implements	Runnable{
 			
 		}while(inwon > name.length || inwon < 1);
 		
-		type = new int[inwon];
-		
 		while(i < inwon) {
-			
-			type[i] = rd.nextInt(20) + 1;
+			type[i] = rd.nextInt(20);
 			
 			for(int j = 0; j < i; j++) {
 				
 				if(type[i] == type[j]) {
-					
 					i--;
 					break;
 				}
@@ -51,39 +46,30 @@ public class Day16Assign implements	Runnable{
 	}
 	
 	public void print() {
-		
-		System.out.println("축하합니다!! 8시 50분까지 공부합시다!\n");
+	
+		System.out.println("축하합니다!! 8시 50분까지 공부합시다!");
 		
 		for(int i = 0; i < type.length; i++) {
 			
 			System.out.printf("%d번 공부자: %s \n", (i + 1), name[type[i]]);
 		}
 	}
+	
 	@Override
 	public void run() {
 		
-		System.out.println("고민중");
-		
-		int i = 0;
-		
-		while(i < 21) {
-			System.out.print(".");
-			
-			try {
-					Thread.sleep(100);
-				} catch (Exception e) {
-		}
-		i++;
-		}
-	}	
+	}
+	
+}
+
+	
 	public static void main(String[] args) {
 		
 		Day16Assign ri = new Day16Assign();
 		
 		ri.input();
-		ri.run();
 		ri.print();
-		//ri.setDaemon(true);
+		
 		
 		
 	}
