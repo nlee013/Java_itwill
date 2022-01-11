@@ -1,0 +1,11 @@
+package com.day16;
+
+//우선순위(내가 정함)가 높은 프로그램을 먼저 실행시키고 돌아옴
+
+public class Test7day16 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.day17;
+//InputStreamReader
+//OutStreamReader
+public class Test3day16 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

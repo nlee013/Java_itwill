@@ -1,0 +1,45 @@
+package com.day16;
+
+class MyThread2 implements Runnable{
+	
+	private int num;
+	private String name;
+	
+	public MyThread2(int num, String name) {
+		
+		this.num = num;
+		this.name = name;
+	}
+	
+	@Override
+	public void run() {
+		
+		int i = 0;
+		
+		while(i < num) {
+			
+			//여기엔 getName()이 없음
+			System.out.println(name + ":" + i);
+			 i++;
+			 
+			 try {
+				Thread.sleep(100);//integer하면 Thread.sleep();
+			} catch (Exception e) {
+				
+			}
+		}
+	}
+}
+public class Test2day16 {
+
+	public static void main(String[] args) {
+
+		System.out.println("Main 시작...");
+		
+		//만든 Thread(Runnable을 만들어준 Thread 이름) ->new Thread(MyThread2)
+		Thread th1 = new Thread(MyThread2(100, "First: "));//Interface Runnable Thread
+		Thread th2 = new Thread(MyThread2(100, "Second"));
+				
+	}
+
+}

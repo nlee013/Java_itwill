@@ -1,0 +1,20 @@
+package com.day16;
+
+//Thread 보다 Runnable을 많이 쓰는 것 같음
+
+class MyThread3 implements Runnable{
+
+	@Override
+	public void run() {
+		
+	}
+	
+}
+public class Test3day16 {
+
+	public static void main(String[] args) {
+
+		//현재 시스템의 날짜와 시간을 1초마다 출력해라
+	}
+
+}
