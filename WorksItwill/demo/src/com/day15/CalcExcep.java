@@ -28,8 +28,7 @@ public class CalcExcep {
 			
 			String[] temp  = str.split(",");//검사가 아니라 temp에 다시 넣어놓기
 			
-			auth.number(temp[0]);
-			
+			auth.number(temp[0]);//입력값에 이상이 없는지 확인
 			num1 = Double.parseDouble(temp[0]);
 			
 			auth.number(temp[1]);

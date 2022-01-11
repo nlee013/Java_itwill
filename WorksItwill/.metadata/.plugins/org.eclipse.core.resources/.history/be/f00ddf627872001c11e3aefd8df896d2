@@ -1,0 +1,19 @@
+package com.practice;
+
+import java.util.Scanner;
+
+public class DoWhile {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str;
+		
+		do {
+			System.out.println("성별? [남, 여]");
+			str = sc.next();
+		}while(str != "남" && str != "여");
+		
+		System.out.println(str + "----");
+	}
+
+}

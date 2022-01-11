@@ -9,11 +9,11 @@ import java.util.Scanner;
 
 class MyAuthException{//사용자 정의를 인증해주는 예외처리다
 	
-	public void inputFormat(String str) throws Exception {
+	public void inputFormat(String str) throws Exception {//MyException도 가능함. 다른 것을 갖다써도 됨
 		//사용자 정의 오류는 exception에서 받아서 확인함
 		
 		//예외발생 시 : 문자 길이
-		if(str.length() < 5 || str.length() >10) {
+		if(str.length() < 5 || str.length() >10) {//에러가 나는 경우만 써놨음
 			
 			throw new Exception("5~10자만 입력 가능합니다.");
 		}
@@ -26,6 +26,10 @@ class MyAuthException{//사용자 정의를 인증해주는 예외처리다
 		//2번 방법
 		boolean eng = false;
 		boolean num = false;
+		
+		//3번 방법
+		//boolean eng, num = false; -> false가 num(마지막 값)에만 들어감
+		//eng = num = false;
 		
 		for(int i = 0; i < str.length(); i++) {
 				

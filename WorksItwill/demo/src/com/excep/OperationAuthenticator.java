@@ -4,7 +4,7 @@ public class OperationAuthenticator {
 
 	public void inputFormat(String str) throws MyException {
 		
-		String temp[] = str.split(",");
+		String temp[] = str.split(",");//입력값을 ,(콤마)로 구분해서 받기
 		
 		if(temp.length !=2) {//temp의 배열의 개수가 2개가 아니면 안되기에 
 			
@@ -19,7 +19,7 @@ public class OperationAuthenticator {
 	
 	//정수이냐 실수이냐 판단하는 method
 	public void number(String str) throws MyException {
-		//넘어오는 숫자에 정수인지, 소수점이 있는지 확인할 수 있는 코드 작성
+		//넘어오는 숫자에 정수인지, 소수점이 있는지(실수) 확인할 수 있는 코드 작성
 		try {
 			
 			if(str.indexOf(".") != -1) {

@@ -14,13 +14,13 @@ public class Test3day15 {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		String oper = null;
+		String oper = "";//null;
 		
 		try {
 			System.out.println("연산자?: ");
 			oper = br.readLine();
 			
-			if(!oper.equals("+") && !oper.equals("-") &&
+			if(!oper.equals("+") && !oper.equals("-") &&//둘다 부정이면 &&
 			   !oper.equals("*") && !oper.equals("/")) {
 				
 				//exception은 class.
@@ -53,7 +53,7 @@ public class Test3day15 {
 			System.out.println("Second number: ");
 			num2 = Integer.parseInt(br.readLine());
 			
-			oper = Test3day15.getOper();
+			oper = Test3day15.getOper();//여기로 돌려줌. 에러가 난다면 여기서 에러가 나는 것임
 			
 			result = 0;
 			

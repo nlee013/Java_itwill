@@ -45,16 +45,16 @@ public class Test2day15 {
 			catch (ArithmeticException e) {
 				System.out.println("0으로 나눌 수 없습니다");
 			}
-			catch (Exception e) {
-		//exception은 다른 exception보다 제일 아래에 작성함
-		//실행하다가 error가 발생하면 catch가 받고
-		//Exception이 처리되고 e에게 반환해줌
+			catch (Exception e) {//위에 있는 exception에서 해결 할 수 없다면 여기서 해결
+			//exception은 다른 exception보다 제일 아래에 작성함
+			//실행하다가 error가 발생하면 catch가 받고
+			//Exception이 처리되고 e에게 반환해줌
 				
-				System.out.println("잘못 입력했습니다. 숫자를 다시 입력해주세요. ");
-				System.out.println(e.toString());//이 부분 많이 쓰일 예정.
-				e.printStackTrace();
+			System.out.println("잘못 입력했습니다. 숫자를 다시 입력해주세요. ");
+			System.out.println(e.toString());//이 부분 많이 쓰일 예정.
+			e.printStackTrace();
 				
-			}finally {
+			}finally {//error가 나도 언제든지 무조건 실행됨
 				System.out.println("언제든지 실행된다.");
 			}
 			System.out.println("catch문 밖...");

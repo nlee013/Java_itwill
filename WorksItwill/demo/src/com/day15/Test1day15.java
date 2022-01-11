@@ -4,15 +4,15 @@ package com.day15;
 
 class Box<T>{
 	
-	private T t;
+	private T t;//자료형 integer
 	
-	public void set(T t) {
+	public void set(T t) {//매개변수 t를 받는다
 		
 		this.t = t;
 	}
 	
 	public T get() {
-		return t;
+		return t;//반환값 integer
 	}
 	
 	
@@ -29,14 +29,14 @@ public class Test1day15 {
 		System.out.println(i);
 		
 		Box<String> b2 = new Box<String>();
-		//b2.set(1); -> 자료를 String값을 줘서 에러남
+		//b2.set(10); -> 자료를 String값을 줘서 에러남
 		b2.set("Seoul");
 		String s = b2.get();
 		System.out.println(s);
 		
 		Box b3 = new Box<>();
 		b3.set(30);
-		Integer ii = (Integer)b3.get();//downcast->꺼내온 데이타가 Object로 부터 꺼내옴
+		Integer ii = (Integer)b3.get();//downcast->get()에서 꺼내온 데이타가 Object로 부터 꺼내옴
 		System.out.println(ii);
 	}
 
