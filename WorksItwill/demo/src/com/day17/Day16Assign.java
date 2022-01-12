@@ -3,46 +3,88 @@ package com.day17;
 import java.util.Random;
 import java.util.Scanner;
 
-
-public class Day16Assign {
+public class Day16Assign implements	Runnable{
 	
-	public static void main(String[] args) {
-
-		Random rd = new Random();
+	private static String[] name =
+		{"전상원","박  범","김찬주","진현주","남승은",
+		"박가윤","서동혁","양세리","김창훈","이주현",
+		"왕혜민","이종원","장하은","김성재","채현우",
+		"이윤재","전성덕","이나영","배승환","이한솔"};
+	
+	private int[] type;
+	
+	public void RandomName(String[] name) {
+		
+		this.name = name;
+	}
+	
+	public void input() {
+		
 		Scanner sc = new Scanner(System.in);
+		Random rd = new Random();
 		
-		String[] name =
-			{"전상원","박  범","김찬주","진현주","남승은",
-			"박가윤","서동혁","양세리","김창훈","이주현",
-			"왕혜민","이종원","장하은","김성재","채현우",
-			"이윤재","전성덕","이나영","배승환","이한솔"};
-		
-		int inwon = 0;
-		//String str;
+		int inwon, i = 0;
 		
 		do {
-			System.out.print("늦게까지 공부할 사람 인원수?: ");
+			System.out.println("공부 늦게까지 하고 갈 인원수?: ");
+			
 			inwon = sc.nextInt();
 			
-		}while(inwon > name.length || inwon < 1);	
+		}while(inwon > name.length || inwon < 1);
 		
-		System.out.println("gg");
+		type = new int[inwon];
 		
-		int n = 0;
-		
-		while(n < 5) {
-		
-			name[n] = rd.toString();
+		while(i < inwon) {
 			
-			for(int i = 0; i < name.length; i ++) {
+			type[i] = rd.nextInt(20) + 1;
+			
+			for(int j = 0; j < i; j++) {
 				
-				name[i] = sc.next();
+				if(type[i] == type[j]) {
+					
+					i--;
+					break;
+				}
 			}
+			i++;
 		}
-		System.out.print("고민중");
-		System.out.println("축하합니다!!, 남아서 공부합시다!"
-				+ "\n발표자: " + name);
+	}
+	
+	public void print() {
+		
+		System.out.println("축하합니다!! 8시 50분까지 공부합시다!\n");
+		
+		for(int i = 0; i < type.length; i++) {
+			
+			System.out.printf("%d번 공부자: %s \n", (i + 1), name[type[i]]);
+		}
+	}
+	@Override
+	public void run() {
+		
+		System.out.println("고민중");
+		
+		int i = 0;
+		
+		while(i < 21) {
+			System.out.print(".");
+			
+			try {
+					Thread.sleep(100);
+				} catch (Exception e) {
+		}
+		i++;
+		}
+	}	
+	public static void main(String[] args) {
+		
+		Day16Assign ri = new Day16Assign();
+		
+		ri.input();
+		ri.run();
+		ri.print();
+		//ri.setDaemon(true);
+		
+		
 	}
 }
-
-

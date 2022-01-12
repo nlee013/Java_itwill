@@ -1,0 +1,48 @@
+package com.day17;
+
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class Day16Assign {
+	
+	public static void main(String[] args) {
+
+		Random rd = new Random();
+		Scanner sc = new Scanner(System.in);
+		
+		String[] name =
+			{"전상원","박  범","김찬주","진현주","남승은",
+			"박가윤","서동혁","양세리","김창훈","이주현",
+			"왕혜민","이종원","장하은","김성재","채현우",
+			"이윤재","전성덕","이나영","배승환","이한솔"};
+		
+		int inwon = 0;
+		//String str;
+		
+		do {
+			System.out.print("늦게까지 공부할 사람 인원수?: ");
+			inwon = sc.nextInt();
+			
+		}while(inwon > name.length || inwon < 1);	
+		
+		System.out.println("gg");
+		
+		int n = 0;
+		
+		while(n < 5) {
+		
+			name[n] = rd.toString();
+			
+			for(int i = 0; i < name.length; i ++) {
+				
+				name[i] = sc.next();
+			}
+		}
+		System.out.print("고민중");
+		System.out.println("축하합니다!!, 남아서 공부합시다!"
+				+ "\n발표자: " + name);
+	}
+}
+
+
