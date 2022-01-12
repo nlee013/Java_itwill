@@ -1,0 +1,14 @@
+package com.day17;
+
+public class Test13day17 {
+
+	public static void main(String[] args) {
+
+		String str = "d:\\doc\\temp\\java1\\itwill.txt";
+		
+		//1번 방법
+		String path = str.substring(0, str.lastIndexOf("\\"));//뒤에서부터 \\을 찾아서 path에 들어감
+		System.out.println(path);
+	}
+
+}

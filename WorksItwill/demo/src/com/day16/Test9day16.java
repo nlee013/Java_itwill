@@ -8,6 +8,9 @@ import java.util.TimerTask;
 //thread가 상속받게 만들기
 public class Test9day16 extends Thread{
 	
+	//c.getTime()를 3000(3초)를 찍는다고 할 때
+	//시작하자마자 1초를 찍기 때문에 초기값 0을 먼저 찍고 정한 시간차 순대로 출력되는 것
+	
 	//private int num = 0;
 	private int num;
 	

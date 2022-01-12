@@ -26,7 +26,8 @@ public class Test4day17 {
 			
 			wr.write(data);
 			
-			//안써도 무관하지만 writer사용할 때는 반드시 써야됨
+			//flush()는 평소에 안써도 무관하지만 writer사용할 때는 반드시 써야됨
+			//안쓰면 마지막 data가 출력이 안됨
 			wr.flush();//강제로 출력.
 		}
 		

@@ -1,0 +1,44 @@
+package com.day17;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.util.Scanner;
+
+//파일 복사
+//원본 파일? "d:\\doc\\test.txt"
+//대상 파일? "d:\\doc\\out2.txt"
+//복사완료
+//스캐너 써서 입력값 받아서 넣기
+
+public class Test7day17 {
+
+	public static void main(String[] args) {
+
+		try {
+			
+			FileInputStream fis = new FileInputStream("d:\\doc\\test.txt");
+			FileOutputStream fos = new FileOutputStream("d:\\doc\\out2.txt");
+			
+			Scanner sc = new Scanner(System.in);
+			
+			int data;
+			
+			System.out.print("Type characters:");
+			//System.out.print(data);
+
+		
+			
+			while((data = System.in.read()) != -1) {
+				
+				System.out.write(data);
+				
+				System.out.flush();
+			}
+			fis.close();
+			fos.close();
+		} catch (Exception e) {
+			
+		}
+	}
+
+}

@@ -20,7 +20,9 @@ public class Test2day17 {
 		
 		//input output의 error는 대부분 IOException 처리하면 됨
 		os.write(b);//한번에 (위에 만든 배열구조를 통체로)내보내는 것
+		
 		System.out.println("Heyyy![1]");
+		
 		os.close();//data가 나간 뒤 닫아줌(output Stream을 닫음)
 		
 		System.out.println("Heyyy![2]");//close()때문에 출력안됨

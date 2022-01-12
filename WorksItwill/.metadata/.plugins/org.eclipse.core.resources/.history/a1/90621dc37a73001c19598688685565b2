@@ -1,0 +1,33 @@
+package com.score6;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Data {
+
+	private List<DataVO> lists = new ArrayList<DataVO>();
+	
+	Scanner sc = new Scanner(System.in);
+	
+	public int input(){
+		
+		int result = 0;
+		
+		DataVO vo = new DataVO();
+		
+		System.out.println("Type your name: ");
+		vo.setName(sc.next());
+		
+		System.out.println("Typ your birthday[XXXX-XX-XX]: ");
+		vo.setBirth(sc.next());
+		
+		System.out.println("Type your score: ");
+		vo.setScore(sc.nextInt());
+		
+		
+		
+		return result;
+	}
+	
+}

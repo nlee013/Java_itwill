@@ -1,0 +1,14 @@
+package com.day17;
+
+import java.io.FileOutputStream;
+
+public class MyDataMain {
+
+	public static void main(String[] args) {
+
+		FileOutputStream fos = new FileOutputStream("d:\\doc\\data.txt");
+		
+		
+	}
+
+}

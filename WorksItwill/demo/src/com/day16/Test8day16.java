@@ -48,8 +48,10 @@ class MyThread8 implements Runnable{
 
 	public static void main(String[] args) {
 
-		MyThread8 ob = new MyThread8();
+		MyThread8 ob = new MyThread8();//핵심내용: 객체가 하나임
 		
+		//이 thread th1과 th2가 위의 MyThread8 ob의 ob 하나가지고 경쟁함
+		//public void run()가지고 경쟁함
 		Thread th1 = new Thread(ob);
 		Thread th2 = new Thread(ob);
 				

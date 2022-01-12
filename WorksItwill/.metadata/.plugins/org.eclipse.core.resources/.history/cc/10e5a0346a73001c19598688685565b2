@@ -1,0 +1,12 @@
+package com.day17;
+
+//객체의 직렬화
+//메모리에 생성된 class 객체의 instance 변수의 현재 상태를
+//그대로 file에 저장 하거나 network를 통해서 전달 가능한 기능
+public class Test15day17 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

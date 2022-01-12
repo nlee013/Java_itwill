@@ -1,0 +1,18 @@
+package com.day17;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class Test16day17 {
+
+	public static void main(String[] args) {
+
+		//역 직렬화
+		FileInputStream fis = new FileInputStream("d:\\doc\\out6.txt");
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		
+		
+				
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.score6;
+
+public class DataMain {
+
+	public static void main(String[] args) {
+
+	}
+
+}
