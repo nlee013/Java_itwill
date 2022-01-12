@@ -31,6 +31,5 @@ public class Test3day16 {
 		
 		Thread th = new Thread(new MyThread3());
 		th.start();
-		//Thread th = new Thread(new MyThread3()).th.start();같은 형식으로도 가능
 	}
 }
