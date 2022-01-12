@@ -17,7 +17,6 @@
 <fullyQualifiedTypeName name="com.day15.Test3day15"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-<fullyQualifiedTypeName name="com.excep.MyException"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="com.excep.OperationAuthenticator"/>
 <fullyQualifiedTypeName name="java.util.concurrent.SynchronousQueue"/>
@@ -39,7 +38,6 @@
 <fullyQualifiedTypeName name="com.day16.MyThread5"/>
 <fullyQualifiedTypeName name="com.day16.MyThread6"/>
 <fullyQualifiedTypeName name="com.day16.MyThread"/>
-<fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.nio.channels.GatheringByteChannel"/>
 <fullyQualifiedTypeName name="com.day16.MyThread7"/>
 <fullyQualifiedTypeName name="com.day16.MyThread8"/>
@@ -59,5 +57,7 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.day16.MyRandom"/>
+<fullyQualifiedTypeName name="com.excep.MyException"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
 </qualifiedTypeNameHistroy>
