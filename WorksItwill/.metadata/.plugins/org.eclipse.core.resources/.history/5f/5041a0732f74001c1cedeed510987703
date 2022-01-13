@@ -1,0 +1,11 @@
+package com.day18;
+
+//성적처리. 이름, 점수(국영수), 총점 입력란, 결과, 종료 버튼 생성 및 클릭
+
+public class Test5day18 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

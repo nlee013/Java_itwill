@@ -27,9 +27,10 @@ public class MyDataMain {
 		FileInputStream fis = new FileInputStream("d:\\doc\\data.txt");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		
-		MyDataVO ob = null;
+		MyDataVO ob = null;//밖에 만든 이유: 데이터를 공용으로 사용하기 위해서
 		
 		try {
+			
 			while(true) {
 				
 				ob = (MyDataVO)ois.readObject();//MyDataVO로 형변환 -> downCast

@@ -4,15 +4,17 @@ import java.io.Serializable;
 
 public class DataVO implements Serializable{
 		
+		private static final long serialVersionUID = 1L;
+	
 		private String name, birth;
 		private int score;
 		
-		public DataVO() {
+		/*public DataVO() {
 			
 			this.name = name;
 			this.birth = birth;
 			this.score = score;
-		}
+		}*/
 
 		public String getName() {
 			return name;
@@ -41,6 +43,7 @@ public class DataVO implements Serializable{
 		@Override
 		public String toString() {
 			
-			return name + ":" + birth + score;
+			return name + ":" + birth + " "+ score;
+			//return String.format(%6s %6s %4d, name, birth, score);
 		}
 }

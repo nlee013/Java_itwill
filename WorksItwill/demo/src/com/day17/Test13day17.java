@@ -23,10 +23,10 @@ public class Test13day17 {
 		*/
 		
 		//2번 방법
-		File f = new File(str);
+		File f = new File(str);//경로를 다 줌
 		
 		if(!f.getParentFile().exists()) {
-			f.getParentFile().mkdirs();
+			f.getParentFile().mkdirs();//d:\\doc\\temp\\java1까지 만들어라
 		}
 		
 		//공통

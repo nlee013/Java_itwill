@@ -1,0 +1,33 @@
+package com.day18;
+
+import java.awt.Frame;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Test6day18 extends Frame{
+	
+	private static final long serialVersionUID = 1L;
+
+	private int x, y;
+	
+	public Test6day18() {
+		
+		addWindowListener(new WindowAdapter() {
+
+			@Override
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+
+		setTitle("성적 처리");
+		setSize(400, 400);
+		//setResizable(false); 창 최대화 못하게 false로 함
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+
+		new Test6day18();
+	}
+
+}

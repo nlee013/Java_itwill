@@ -1,9 +1,0 @@
-package com.score2Impl;
-
-public class ScoreMain2 {
-
-	public static void main(String[] args) {
-
-	}
-
-}

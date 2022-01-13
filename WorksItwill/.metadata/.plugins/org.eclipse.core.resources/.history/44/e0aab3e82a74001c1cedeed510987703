@@ -1,0 +1,47 @@
+package com.day18;
+
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Frame;
+import java.awt.TextArea;
+import java.awt.TextField;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Test4day18 extends Frame{
+
+	private static final long serialVersionUID = 1L;
+
+	// Text Area에 글자, radio button(option button), label등 만들어보기
+	
+	private Button btn;
+	private TextArea ta;
+	private TextField tf;
+	
+	public Test4day18() {
+		
+		tf = new TextField();
+		ta = new TextArea();
+		btn = new Button("Add");
+		
+		setTitle("Window");
+		setSize(300, 300);
+		setBackground(new Color(170, 227, 227));
+		
+		addWindowListener(new WindowAdapter() {
+			
+			@Override
+			public void windowClosed(WindowEvent e) {
+				System.exit(0);			
+			}
+		});
+	
+		setVisible(true);
+		
+	}
+	public static void main(String[] args) {
+
+		new Test4day18();
+	}
+
+}

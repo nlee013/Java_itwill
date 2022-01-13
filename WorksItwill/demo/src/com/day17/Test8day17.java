@@ -26,6 +26,8 @@ public class Test8day17 {
 			byte[] buffer = new byte[1024];//1024개의 buffer(배열)가 생성.
 			
 			while((data = fis.read(buffer, 0, 1024)) != -1) {//한번 처리 할 때마다 1024개를 하나씩 다 꺼냄
+				//fis.read()는 1BYTE씩 읽어옴
+				
 				fos.write(buffer, 0, data);
 		////***파일을 받거나 내보낼 때 사용하는 코딩이므로 무조건 외우기!!!**여기까지*
 			}

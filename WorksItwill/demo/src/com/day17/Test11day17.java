@@ -23,7 +23,7 @@ public class Test11day17 {
 
 			//fos = new FileOutputStream("d:\\doc\\out5.txt");
 			fos = new FileOutputStream("d:\\doc\\out5.txt", true);//true는 누적해라//문자열 누적은 append
-			ps = new PrintStream(fos);
+			ps = new PrintStream(fos);//FileOutputStream는 PrintStream과 자주사용
 			
 			ps.println("꼬미");
 			ps.println("듕이");

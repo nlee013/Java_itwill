@@ -1,0 +1,11 @@
+package com.day18;
+
+//Abstract Window Toolkit
+
+public class Test7day18 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

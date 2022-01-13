@@ -1,0 +1,62 @@
+package com.day18;
+
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Frame;
+import java.awt.TextArea;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+//ActionListener
+public class Test4day18 extends Frame implements ActionListener{
+
+	private static final long serialVersionUID = 1L;
+
+	// Text Area에 글자, radio button(option button), label등 만들어보기
+	
+	private Button btn;
+	private TextArea ta;
+	private TextField tf;
+	
+	public Test4day18() {
+		
+		tf = new TextField();
+		ta = new TextArea();
+		btn = new Button("Add");
+		
+		setBackground(new Color(170, 227, 227));
+		
+		//가장 기본적인 추가 기능: BorderLayout
+		add(tf, BorderLayout.NORTH);
+		add(ta, BorderLayout.CENTER);
+		add(btn,BorderLayout.SOUTH);
+		
+		setTitle("Nayoung's Window");
+		setSize(300, 300);
+		
+		
+		addWindowListener(new WindowAdapter() {
+			
+			@Override
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);			
+			}
+		});
+	
+		setVisible(true);
+		
+	}
+	public static void main(String[] args) {
+
+		new Test4day18();
+	}
+	//actionPerformed: 실행하는 method
+	@Override
+	public void actionPerformed(ActionEvent e) {
+	}
+
+}

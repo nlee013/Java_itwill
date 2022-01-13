@@ -1,0 +1,28 @@
+package com.day18;
+
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.TextArea;
+import java.awt.TextField;
+
+public class Test4day18 extends Frame{
+
+	private static final long serialVersionUID = 1L;
+
+	// Text Area에 글자, radio button(option button), label등 만들어보기
+	
+	private Button bin;
+	private TextArea ta;
+	private TextField tf;
+	
+	public Test4day18() {
+		
+		tf = new TextField();
+		ta = new TextArea();
+		btn = new Button("Add");
+	}
+	public static void main(String[] args) {
+
+	}
+
+}

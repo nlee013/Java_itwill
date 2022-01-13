@@ -7,7 +7,7 @@ import java.io.FileFilter;
 
 class MyFilterList implements FileFilter{
 
-	private File f;//f->필수 조건
+	private File f;//f->필수 조건 : MyFilterList을 움직이게 하는 필수값
 	
 	//생성자 만든 후, String filePath라는 경로를 준다.
 	//객체를 또 생성 후 파일을 넘겨줌
@@ -28,11 +28,11 @@ class MyFilterList implements FileFilter{
 			System.out.println("File size: " + f.length());
 			
 			//사용자의 directory를 보여달라
-			String p = System.getProperty("user.dir");
+			String p = System.getProperty("user.dir");//System.getProperty 시스템의 환경설정을 읽어온다
 			System.out.println("현재 프로젝트 경로: " + p);
 			
 			//폴더
-			if(f.isDirectory()) {
+			if(f.isDirectory()) {//dir이 있으면
 				
 				//파일 폴더구조:파일에 대한 정보를 this에 불러오면
 				//File[] lists라는 배열에 집어넣는다
@@ -59,7 +59,7 @@ class MyFilterList implements FileFilter{
 	}
 	
 	@Override
-	public boolean accept(File pathname) {
+	public boolean accept(File pathname) {//사용자가 지정한 드라이브와 파일을 리턴값으로 반환?
 		
 		//File pathname -> 파일에 있는 정보를 보는 것
 		return pathname.isFile() || pathname.isDirectory();//isDirectory(); -> 폴더만 보는 것

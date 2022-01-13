@@ -14,7 +14,7 @@ public class Test16day17 {
 		FileInputStream fis = new FileInputStream("d:\\doc\\out6.txt");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		
-		Hashtable<String, String> h = (Hashtable<String, String>)ois.readObject();
+		Hashtable<String, String> h = (Hashtable<String, String>)ois.readObject();//downcast해서 h에 넣어줌
 		
 		Iterator<String> it = h.keySet().iterator();
 		

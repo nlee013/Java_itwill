@@ -2,7 +2,7 @@ package com.day17;
 
 import java.io.Serializable;
 
-public class MyDataVO implements Serializable{
+public class MyDataVO implements Serializable{//implements Serializable을 해줘야 직렬화됌
 
 	private static final long serialVersionUID = 1L;
 	private String name;
@@ -15,7 +15,7 @@ public class MyDataVO implements Serializable{
 		this.score = score;
 	}
 
-	//원래는 항상 해야되지만 이번에는 위에 생성자를 만들어서 써보자!
+	//원래는 항상 getter, setter 해야되지만 이번에는 위에 생성자로 오버로딩해서 만들어서 써보자!
 	public String getName() {
 		return name;
 	}
