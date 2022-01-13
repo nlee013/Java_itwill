@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
+=======
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.TreeMap"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
+<fullyQualifiedTypeName name="com.score4.ScoreVO"/>
+<fullyQualifiedTypeName name="com.score5.ScoreImpl"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.score5.ScoreVO"/>
+<fullyQualifiedTypeName name="com.day15.Box"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="com.day15.Test3day15"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="com.excep.OperationAuthenticator"/>
+<fullyQualifiedTypeName name="java.util.concurrent.SynchronousQueue"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+>>>>>>> c2c6c3ce299e2d78e1bb48d87a51aff5fb8cb955
 <fullyQualifiedTypeName name="com.day15.MyAuthException"/>
 <fullyQualifiedTypeName name="com.naver.Naver"/>
 <fullyQualifiedTypeName name="com.naver.NaverImpl"/>
@@ -14,7 +38,6 @@
 <fullyQualifiedTypeName name="com.day16.MyThread5"/>
 <fullyQualifiedTypeName name="com.day16.MyThread6"/>
 <fullyQualifiedTypeName name="com.day16.MyThread"/>
-<fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.nio.channels.GatheringByteChannel"/>
 <fullyQualifiedTypeName name="com.day16.MyThread7"/>
 <fullyQualifiedTypeName name="com.day16.MyThread8"/>
@@ -31,7 +54,9 @@
 <fullyQualifiedTypeName name="com.day17.RandomInwon"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="com.day16.MyRandom"/>
+<fullyQualifiedTypeName name="com.excep.MyException"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="javax.naming.directory.SearchControls"/>
 <fullyQualifiedTypeName name="com.day17.Test8day17"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
@@ -60,4 +85,7 @@
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.score6.DataVO"/>
+=======
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+>>>>>>> c2c6c3ce299e2d78e1bb48d87a51aff5fb8cb955
 </qualifiedTypeNameHistroy>

@@ -1,3 +1,36 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@nlee013 
+nlee013
+/
+Java_itwill
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+1
+Insights
+Settings
+We found potential security vulnerabilities in your dependencies.
+Only the owner of this repository can see this message.
+
+Java_itwill/WorksItwill/.metadata/.log
+@nlee013
+nlee013 day 17 and score6 Data
+Latest commit 94da067 3 hours ago
+ History
+ 1 contributor
+8297 lines (8180 sloc)  632 KB
+   
 !SESSION 2022-01-10 09:28:35.140 -----------------------------------------------
 eclipse.buildId=4.8.0.I20180611-0500
 java.version=1.8.0_311
@@ -8295,6 +8328,7 @@ Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git
 	at java.io.FileInputStream.<init>(Unknown Source)
 	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:178)
 	... 78 more
+<<<<<<< HEAD
 !SESSION 2022-01-13 09:31:46.879 -----------------------------------------------
 eclipse.buildId=4.8.0.I20180611-0500
 java.version=1.8.0_311
@@ -9586,3 +9620,18 @@ Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git
 	at java.io.FileInputStream.<init>(Unknown Source)
 	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:178)
 	... 78 more
+=======
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
+>>>>>>> c2c6c3ce299e2d78e1bb48d87a51aff5fb8cb955
