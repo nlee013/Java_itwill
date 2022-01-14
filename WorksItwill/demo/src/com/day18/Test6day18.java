@@ -42,6 +42,7 @@ public class Test6day18 extends Frame{
 		setVisible(true);
 	}
 	
+	//마우스를 쓸 때 무조건 override 해야되는 두개. paint, update
 	@Override
 	public void paint(Graphics g) {
 
@@ -52,7 +53,7 @@ public class Test6day18 extends Frame{
 	
 	@Override
 	public void update(Graphics g) {
-		paint(g);
+		paint(g);//update가 paint호출
 	}
 	
 	//Mouse
@@ -61,10 +62,11 @@ public class Test6day18 extends Frame{
 		@Override
 		public void mousePressed(MouseEvent e) {
 			
+			//클릭한 곳의 값
 			x = e.getX();
 			y = e.getY();
 			
-			repaint();//update 호출하는 명령어
+			repaint();//update 호출하는 명령어-> 되는 동시에 update->paint 호출
 			
 		}
 

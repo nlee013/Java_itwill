@@ -33,9 +33,10 @@ public class Test4day18 extends Frame implements ActionListener{
 		add(ta, BorderLayout.CENTER);
 		add(btn,BorderLayout.SOUTH);
 		
-		//감시자를 test4day18에 단다
-		tf.addActionListener(this);
-		btn.addActionListener(this);
+		//CCTV 감시자를 test4day18에 단다
+		tf.addActionListener(this);//여기선 enter
+		btn.addActionListener(this);//여기선 click
+		
 		setTitle("Nayoung's Window");
 		setSize(300, 300);
 		setBackground(new Color(170, 227, 227));
@@ -56,11 +57,14 @@ public class Test4day18 extends Frame implements ActionListener{
 		new Test4day18();
 	}
 	//actionPerformed: 실행하는 method
+	//ActionListener의 method
 	//모든 걸 다 받을 수 있는 Object로 받아낼 준비를 해야됌
 	@Override
 	public void actionPerformed(ActionEvent e) {//여기서 e인데 evt이면 밑에 evt.getSource();로 바꿔야됌
 		
 		Object ob = e.getSource();
+		
+		//전체적인 큰 비교.instanceof 비교
 		
 		if(ob instanceof Button || ob instanceof TextField){
 			

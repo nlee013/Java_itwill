@@ -33,12 +33,13 @@ public class Test5day18 extends Frame implements ActionListener{
 			Label lbl = new Label();
 
 			lbl.setText(title[i]);
-			lbl.setBounds(10, (i + 1)*30, 90, 20);
+			lbl.setBounds(10, (i + 1)*30, 90, 20);//(i + 1)*30 y 교차점마다 입력칸 생성
 
 			add(lbl);
 
 			if(i != 4) {
-
+				
+				//배열 만든 것을 꼭 반복문 안에 들어아가야됌
 				tf[i] = new TextField();
 				tf[i].setBounds(100, (i + 1)*30, 60, 20);
 				tf[i].addKeyListener(new KeyHandler());
@@ -47,7 +48,7 @@ public class Test5day18 extends Frame implements ActionListener{
 
 			}else {
 				result.setBounds(100, (i + 1)*30, 60, 20);
-				add(result);
+				add(result);//label
 			}
 		}
 
@@ -89,7 +90,7 @@ public class Test5day18 extends Frame implements ActionListener{
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent e) {//일러 바침을 당해서 구분해야됌
+	public void actionPerformed(ActionEvent e) {//일러 바침을 당해서 (이벤트)구분해야됌
 
 		Object ob = e.getSource();
 
@@ -108,7 +109,8 @@ public class Test5day18 extends Frame implements ActionListener{
 			}
 		}
 	}
-
+	
+	//별도의 method를 만들어서 위에 호출
 	private void execute() {
 
 		int tot = 0;
@@ -136,7 +138,7 @@ public class Test5day18 extends Frame implements ActionListener{
 
 			Object ob = e.getSource();
 
-			if(e.getKeyCode() != KeyEvent.VK_ENTER) {
+			if(e.getKeyCode() != KeyEvent.VK_ENTER) {//enter인가?
 
 				return;
 			}
@@ -155,23 +157,23 @@ public class Test5day18 extends Frame implements ActionListener{
 				}
 			}
 			
-			if(ob instanceof TextField) {//입력 칸
+			if(ob instanceof TextField) {//입력 칸.
 
-				TextField t = (TextField)ob;
+				TextField t = (TextField)ob;//downcast
 
 				for(int i = 0; i < tf.length; i++) {
 
 					//Text 3번(입력 칸 마지막 번째)에 커서를 가져야됌
 					if(i != 3 && tf[i] == t) {
 
-						tf[i + 1].requestFocus();
+						tf[i + 1].requestFocus();//다음칸인 textfield에 커서를 갖다둬라
 
-						return;
+						return;//빠져나옴
 
 					}else if(tf[3] == t) {
 
 						btn1.requestFocus();
-						//return; 여기가 마지막이여서 써도 안써도 무관.
+						//return; 여기가 마지막이여서 써도 안써도 무관.//빠져나옴
 					}
 				}
 			}

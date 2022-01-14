@@ -19,6 +19,7 @@ public class Test3day18 extends Frame {
 		
 		//WindowAdapter() -> 무명의 Anonymous class이므로 directly로 override 할 수 있는 method를 연결해줌
 		//아래류의 코딩은 웹에서 많이 사용함
+		//위와 같이 class를 여러개 만들어서 넣어줘도 되지만 아래처럼 써서 필요한 override method만 골라사용하면 됌
 		addWindowListener(new WindowAdapter() {
 
 			@Override

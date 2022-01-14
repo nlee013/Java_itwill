@@ -68,9 +68,9 @@ public class Test7day18 extends JFrame implements ActionListener{
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent e) {//여기에 문자가 들어옴
+	public void actionPerformed(ActionEvent e) {//여기에 문자가 들어옴//
 		
-		String str = e.getActionCommand();//입력한 제목값을 그대로 가져옴
+		String str = e.getActionCommand();//입력한 제목값을 그대로 가져옴//메뉴의 이름.String값으로.
 		
 		//위에 쓴 내용 띄어쓰기 철자 그대로 꼭 쓰기!!
 		if(str.equals("메세지")) {
