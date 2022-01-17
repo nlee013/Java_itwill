@@ -21,10 +21,12 @@ public class Test1day19 {
 		Class c = Class.forName("com.day19.Test");//package이름을 꼭 써야된다//throws Exception
 		//Class<?>->아직 안정했다
 		//c안에 모든 정보가 들어갔다
+		//forName을 통해 읽어온다
 		
+		//기억해두기  c.newInstance();
 		Object o = c.newInstance();//객체 생성.Object있으면 무조건 downcast생각해라
 		
-		Test t = (Test)o;
+		Test t = (Test)o;//downcast
 		t.write();
 		//o.write();는 안됌. 부모는 자식꺼를 못쓴다.
 		

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<booklist>
+	<book kind = "Computer">
+		<title>자바를 잡아라!</title>
+		<author>이나영</author>
+		<price>10000</price>
+	</book>
+	
+	<book kind = "Novel">
+		<title>자바로 세상을 구하다!</title>
+		<author>이나영</author>
+		<price>15000</price>
+	</book>
+	</booklist>

@@ -23,7 +23,7 @@ public class Test2day19 {
 		//String의 생성자 Constructor 정보를 묻기
 		//overloading되는게 많이 있을 수 있어서 배열로 하자
 		System.out.println("Constructor's data");//생성자 정
-		Constructor<?>[] c = cls.getConstructors();
+		Constructor<?>[] c = cls.getConstructors();//Constructor<?>의 ? 생략해도 됌
 		
 		for (int i = 0; i < c.length; i++) {
 			

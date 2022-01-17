@@ -1,0 +1,38 @@
+package com.day19;
+
+import java.awt.Frame;
+import java.awt.TextArea;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.net.MulticastSocket;
+
+public class ChatCS extends Frame implements Runnable, ActionListener{
+
+	private MulticastSocket ms = null;;
+	private InetAdress xGroup = null;
+	
+	private String host = "192.168.16.4";
+	private int port = 7777;
+	private String userName = "Nayoung";
+	
+	private TextArea ta = new TextArea();
+	private TextField tf = new TextField();
+	
+	//DatagrameSocket:UDP로 datagram packet를 전송하거나 수신함
+	//DatagramPacket: UDP를 이용해 전송될 수 있는 data
+	//MulticastSocket: 다수의 client에 datagram을 전송
+	
+	public static void main(String[] args) {
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+	}
+
+	@Override
+	public void run() {
+	}
+
+}

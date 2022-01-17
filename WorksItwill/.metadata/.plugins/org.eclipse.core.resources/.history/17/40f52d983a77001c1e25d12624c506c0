@@ -1,0 +1,68 @@
+package com.day19;
+
+import java.awt.BorderLayout;
+import java.awt.Frame;
+import java.awt.TextArea;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.net.MulticastSocket;
+
+public class ChatCS extends Frame implements Runnable, ActionListener{
+
+	private MulticastSocket ms = null;;
+	private InetAdress xGroup = null;
+	
+	private String host = "230.0.0.1";//192.168.16.4
+	private int port = 7777;
+	private String userName = "Nayoung";
+	
+	private TextArea ta = new TextArea();
+	private TextField tf = new TextField();
+	
+	//DatagrameSocket:UDP로 datagram packet를 전송하거나 수신함
+	//DatagramPacket: UDP를 이용해 전송될 수 있는 data
+	//MulticastSocket: 다수의 client에 datagram을 전송
+	
+	//TCP : 들어온 데이터와 출력할 데이터와 비교해 이상이 있는지 끝까지 검사.
+	//data를 보낼 때 매우 신중함.
+	
+	//D class: 범위는 224.0.0~239.255.25중
+	
+	public ChatCS() {
+		
+		ta.setEditable(false);
+		add(ta, BorderLayout.CENTER);
+		
+		add(tf, BorderLayout.SOUTH);
+		tf.addActionListener(this);
+		
+		addWindowListener(new WindowAdapter() {
+			
+			@Override
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+		
+		setTitle("Groub Chatting [" + host + "]");
+		setSize(400, 400);
+		setVisible(true);
+		tf.requestFocus();
+		
+	}
+	public static void main(String[] args) {
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+	}
+
+	@Override
+	public void run() {
+	}
+
+}

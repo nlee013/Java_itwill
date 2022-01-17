@@ -1,0 +1,14 @@
+package com.day19;
+
+import java.awt.Frame;
+import java.awt.event.ActionListener;
+
+public class ChatCS extends Frame implements Runnable, ActionListener{
+
+	private MulticastSocket ms = "";
+	
+	public static void main(String[] args) {
+
+	}
+
+}

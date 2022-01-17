@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Book XML 파싱</title>
+<script type="text/javascript"></script>
+
+	var xmlDoc = new ActiveXObject("Msxml.DOMDocument");
+	xmlDoc.load("Book.xml");
+	
+</head>
+<body>
+
+</body>
+</html>

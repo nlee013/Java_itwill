@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<City>
+	<Seoul>
+		<구>강남구</구>
+		<구>영등포구</구>
+		<구>종로구</구>
+	</Seoul>
+	<Incheon>
+		<구>부평구</구>
+		<구>남동구</구>
+		<구>연수구</구>
+	</Incheon>
+</City>

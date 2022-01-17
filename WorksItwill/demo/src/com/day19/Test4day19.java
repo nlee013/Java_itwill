@@ -16,15 +16,13 @@ public class Test4day19 {
 		host = sc.next();
 		
 		try {
-			InetAddress ia = InetAddress.getByName(host);
+			InetAddress ia = InetAddress.getByName(host);//Dns..?
 			System.out.println("Ip Address: " + ia.getHostAddress());//ip 林家
 			System.out.println("Host: " + ia.getHostName());//龋胶飘
-			
+
 			//IP 林家啊  32bit : Inet4Address.Inet4Address
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 		}
-		
 	}
-
 }

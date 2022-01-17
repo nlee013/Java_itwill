@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Book XML 파싱</title>
+	<script type="text/javascript">
+
+	var xmlDoc = new ActiveXObject("Msxml.DOMDocument");
+	xmlDoc.load("Book.xml");
+	
+	fucntion printNodeItem(){
+		alert("aaa");
+		//var root = xmlDoc.getElementsByTagName("Booklist")[0];
+		var root = xmlDoc.documentElement;
+		
+		var books = root.getElementsByTagName("book");
+		
+		var out = "";
+		
+		for(var i = 0; i < books.length; i++){
+			
+			out += "\Sort: " + books[i].getAttribute("kind") 
+			+ ", Title: " + books[i].getElementsByTagName("title")[0].firstChild.nodeValue
+			+ ", Author: " + books[i].getElementsByTagName("author")[0].firstChild.nodeValue
+			+ ", Price: " + books[i].getElementsByTagName("price")[0].firstChild.nodeValue;
+			
+		//<book kind = "Novel">의 book은 tag이고 kind는 속성
+		}
+		alert(out);
+	}
+	
+	</script>
+</head>
+<body>
+
+<input type="button"  value="Print Node" onclick="printNodeItem();">
+</body>
+</html>
