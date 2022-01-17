@@ -59,15 +59,15 @@ public class Test3day19 {
 		
 		// [\\w]+ : 한글자 이상의 영, 숫자
 		//@
-		//(\\.[\\w]+) : 괄호 안에 있는 것은 반드시 한번은 표시되어야 함
-		// \\. : . 이런구조가 반드시 한번은 와야됌
+		//(\\.[\\w]+) : 괄호 안에 있는 것은 반드시 .(도트)는 한번은 표시되어야 함
+		// \\. : . 이런구조가 반드시 .(도트)는 한번은 와야됌
 		
 		String pat = "[\\w]+@[\\w]+(\\.[\\w]+)+";//밖에 + (여러개)
 		
 		for(String s :  mails) {
 			
 			//pattern과 비교해서(매치) 출력해라
-			if(Pattern.matches(pat, s)) {
+			if(Pattern.matches(pat, s)) {//(패턴, 검사할 대상)
 				
 				System.out.println(s);
 			}

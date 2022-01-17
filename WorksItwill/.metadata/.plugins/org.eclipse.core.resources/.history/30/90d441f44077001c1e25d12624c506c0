@@ -1,0 +1,15 @@
+package com.day20;
+//Client:file을 읽을 때 fileinputStram file을 저장은 fileoutputStream
+//Client --upload-->Server
+//class를 만들어서 둘만이 아는 code number, size, data를 적는다
+
+//1.파일을 담을 클래스 만들기
+//2.만든 클래스를 전송하기
+public class Test1day20 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

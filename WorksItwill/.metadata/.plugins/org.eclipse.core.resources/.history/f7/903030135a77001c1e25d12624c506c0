@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>XML파싱</title>
+<script type ="text/javascript">
+
+//전역변수
+var xmlDoc = new ActiveXObject("Msxml2.DOMDocument");//xml을 DOM객체라고 부름
+xmlDoc.load("City.xml");
+
+//함수 function(method)으로 나눔
+function printNodeName(){
+	
+	alert("Test");//Syste.out.print와 같음
+}
+
+
+</script>
+</head>
+<body>
+<h1>XM 파싱...</h1>
+<input type="button" value="Print Node name" onclick="printNodeName();">
+</body>
+</html>

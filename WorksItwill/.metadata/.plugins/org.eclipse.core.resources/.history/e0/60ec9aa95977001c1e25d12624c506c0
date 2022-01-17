@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>XML파싱</title>
+
+<script type="text/javascript">
+
+	//전역변수
+	var xmlDoc = new ActiveXObject("Msxml2.DOMDocument");`
+	xmlDoc.load("city.xml");
+	
+	//함수(메소드)
+	function printNodeName(){
+		
+		alert("테스트");
+		
+		
+		
+	}
+
+</script>
+
+</head>
+<body>
+
+<h1>XML 파싱 ...</h1>
+
+<input type="button" value="노드이름출력" onclick="printNodeName()">
+
+</body>
+
+</html>
