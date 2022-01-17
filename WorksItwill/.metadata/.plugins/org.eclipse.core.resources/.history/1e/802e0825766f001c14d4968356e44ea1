@@ -1,9 +1,0 @@
-package com.score;
-
-public interface Score {
-	
-	public void input();
-	public boolean searchHak(String hak);//searchHak을 통해 input()실행 true /실행불가 false
-	public void print();
-	
-}
