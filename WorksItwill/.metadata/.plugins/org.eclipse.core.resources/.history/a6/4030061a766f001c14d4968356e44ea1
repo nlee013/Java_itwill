@@ -1,9 +1,0 @@
-package com.score5;
-
-public interface Score5 {
-	
-	public void input();
-	public boolean searchHak(String hak);
-	public void print();
-	
-}
