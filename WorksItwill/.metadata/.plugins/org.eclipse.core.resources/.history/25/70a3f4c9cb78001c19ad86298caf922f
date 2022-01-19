@@ -1,0 +1,270 @@
+package javaProject1;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.Random;
+import java.util.Scanner;
+
+import com.score6.DataVO;
+
+public class Fishing extends Thread {
+
+	private ArrayList<FishingVO> lists;
+	String str = "d:\\doc\\aquarium.txt";
+	private String path = System.getProperty("user.dir");
+	File f = new File(str);
+	
+	Scanner sc = new Scanner(System.in);
+	int num;
+	int ch;
+	int cnt = 0;
+	String type;
+	String[] fname = {"사하브라물고기", "피치드물고기", "티위르물고기", "퓨라기물고기", "미라다물고기",
+										"신발", "시프란물고기", "스프링물고기", "자바자바물고기", "리엑트물고기",
+										"오라클물고기", "애프르물고기", "사므성물고기", "엘지르물고기", "헤프리물고기"};
+	
+	Random rd;
+	String fish;
+
+	
+public Fishing() {
+		
+	try {
+		if(!f.getParentFile().exists()) {
+			f.getParentFile().mkdirs();
+		}
+		
+		if(f.exists()) {
+			
+			FileInputStream fis = new FileInputStream(f);
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			
+			lists = (ArrayList<FishingVO>)ois.readObject();//객체 생성
+			
+			fis.close();
+			ois.close();
+		}
+	} catch (Exception e) {
+		
+	}
+	}
+
+public void input() {
+		
+		rd = new Random();
+		FishingVO vo = new FishingVO();
+		do {
+			System.out.print("낚시대 하나를 고르세요! 1)셔흐르린 낚시대 2)잘자브린 낚시대 3)평버므한 낚시대");
+			num = sc.nextInt();
+			
+		}while(num > 3 || num < 1);
+		
+		type =fname[rd.nextInt(15)];
+		vo.setAquaList(type);
+		
+		if(lists == null) {//만약에 lists == null 한번도 실행 안했을 때
+			
+			lists = new ArrayList<>();
+		}
+		lists.add(vo);
+		//System.out.println(type);
+		
+		
+			
+	}
+	
+	public void pickPole() throws Exception {
+		
+		Test t = new Test();
+		System.out.println("오오!! 잘 잡으셨네요");
+		
+				if(num == 1) {
+					System.out.printf("%d번 낚시대를 고른 당신: %s \n", num,  type);
+				}else if(num == 2) {
+					System.out.printf("%d번 낚시대를 고른 당신: %s \n", num,  type);
+				}else if(num == 3) {
+					System.out.printf("%d번 낚시대를 고른 당신: %s \n", num,  type);
+				}
+				
+				t.fish1();
+	}
+
+	@Override
+	public void run() {
+		
+		 int i = 0;
+		 System.out.print("물고기가 오기를 기다리는 중");
+		 
+		 while(i < 20) {
+			 
+			 System.out.print(".");
+			 
+			 try {
+				 sleep(100);
+			} catch (Exception e) {
+				System.out.println(e.toString());
+			}
+			 i++;
+		 }
+		 System.out.println();
+	}
+	
+	
+	public void aquarium() throws Exception {
+		
+		ch = 0;
+		
+		System.out.println("잡은 물고기 목록");
+		
+		//System.out.println(vo.getAquaList());
+		try {
+			
+		
+		Iterator<FishingVO> it = lists.iterator();
+		while(it.hasNext()) {
+	
+			FishingVO vo = it.next();
+			System.out.println(vo.toString());
+		}
+		
+		while(true) {
+
+			do {
+				System.out.print("수족관 메뉴: 1. 먹기 2. 방생 3. 메인으로 돌아가기");
+				
+				ch = sc.nextInt();
+
+				switch(ch) {
+				case 1 : eat(); break;
+				case 2 : release();  break;
+				case 3 : return;
+				}
+			}while(ch<1||ch>3);
+		}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+	public void saveFish() {
+		
+		try {
+			if(lists != null) {
+				FileOutputStream fos = new FileOutputStream(f);
+				ObjectOutputStream oos = new ObjectOutputStream(fos);
+				
+				oos.writeObject(lists);
+				
+				fos.close();
+				oos.close();
+				System.out.println("물고기를 획득했으니 이제 집에 가자!");
+			}
+		} catch (Exception e) {
+			
+		}	
+	}
+	
+	public void fishPrint() {
+		
+		try {
+			
+		Iterator<FishingVO> it = lists.iterator();
+		
+		while(it.hasNext()) {
+			
+			FishingVO vo3 = it.next();
+			System.out.println(vo3.toString());
+		}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	public void eat() {
+		
+		try {
+	
+		System.out.print("어떤 물고기를 요리하시겠습니까?");
+		fish = sc.next();
+		
+		if(!searchFish(fish)) {
+	
+			System.out.println("물고기가 없습니다");
+			return;
+		}
+		
+		System.out.printf(" %s 를(을) 요리중입니다\n",fish);
+		Thread ob = new Thread();
+		ob.start();
+		try {
+			ob.join();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		Cooking c = new Cooking();
+		c.cooking();
+
+		System.out.println("잘먹었습니다!");
+		
+		Iterator<FishingVO> it = lists.iterator();
+		while(it.hasNext()) {
+	
+			FishingVO v = it.next();
+			if(fish.equals(v.getAquaList())) {
+				lists.remove(v);
+			}
+		}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+	public void release() {
+		
+		try {
+			
+			System.out.print("어떤 물고기를 놓아주시겠습니까?");
+			fish = sc.next();
+			
+			if(!searchFish(fish)) {
+				
+				System.out.println("물고기가 없습니다");
+				return;
+			}
+			
+		System.out.printf("%s 를(을) 놓아주었습니다\n",fish);
+		
+		Iterator<FishingVO> it = lists.iterator();
+		while(it.hasNext()) {
+	
+			FishingVO v2 = it.next();
+			if(fish.equals(v2.getAquaList())) {
+				lists.remove(v2);
+			}
+		}
+		
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		}
+			
+	public boolean searchFish(String fish) {
+		
+		Iterator<FishingVO> it = lists.iterator();
+		while(it.hasNext()) {
+	
+			FishingVO v2 = it.next();
+			if(fish.equals(v2.getAquaList())) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+}

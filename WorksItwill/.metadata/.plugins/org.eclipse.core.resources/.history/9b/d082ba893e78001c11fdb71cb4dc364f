@@ -1,0 +1,19 @@
+package javaProject1;
+
+import java.util.Random;
+
+public class FishingVO {
+
+	String fish;
+
+	public String getFish() {
+		return fish;
+	}
+
+	public void setFish(String fish) {
+		this.fish = fish;
+	}
+
+	
+	
+}

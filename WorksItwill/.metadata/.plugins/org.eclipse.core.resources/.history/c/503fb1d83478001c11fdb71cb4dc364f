@@ -1,0 +1,194 @@
+package javaProject1;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.Random;
+import java.util.Scanner;
+
+import com.score4.ScoreVO;
+
+public class Fishing extends Thread {
+
+	ArrayList<FishingVO> lists = new ArrayList<>();
+	
+	Scanner sc = new Scanner(System.in);
+	
+	FishingVO vo = new FishingVO();
+	
+	int num;
+	int ch;
+	int cnt = 0;
+	
+	Thread ob;
+	Random rd;
+	String type;
+	//String fish;
+	
+	String[] fname = {"사하브라 물고기", "피치드 물고기", "티위르 물고기", "퓨라기 물고기", "미라다 물고기",
+			"신발", "시프란 물고기", "스프링 물고기", "자바자바 물고기", "리엑트 물고기",
+			"오라클 물고기", "애프르 물고기", "사므성 물고기", "엘지르 물고기", "헤프리 물고기"};
+
+	/*@Override
+	public void run() {
+
+	}*/
+
+
+public void input() {
+	
+		FishingVO vo = new FishingVO();
+		Random rd = new Random();
+		
+		do {
+			System.out.println("낚시대 하나를 고르세요! 1)셔흐르린 낚시대 2)잘자브린 낚시대 3)평버므한 낚시대");
+			num = sc.nextInt();
+			
+		}while(num > 3 || num < 1);
+		
+		type = fname[rd.nextInt(15)];
+		vo.setFish(type);
+		lists.add(vo);
+	}
+	
+	public void printPole() {
+		
+		System.out.println("오오!! 잘 잡으셨네요");
+		
+				if(num == 1) {
+					System.out.printf("%d번 낚시대를 고른 당신: %s \n", num, type);
+				}else if(num == 2) {
+					System.out.printf("%d번 낚시대를 고른 당신: %s \n", num, type);
+				}else if(num == 3) {
+					System.out.printf("%d번 낚시대를 고른 당신: %s \n", num, type);
+				}
+	}
+	public void waitFinshing() {
+		
+		System.out.println("물고기가 오기를 기다리는 중");
+	}
+	
+	@Override
+	public void run() {
+		
+		 int i = 0;
+		 
+		 while(i < 20) {
+			 
+			 System.out.print(".");
+			 
+			 try {
+				 sleep(100);
+			} catch (Exception e) {
+				System.out.println(e.toString());
+			}
+			 i++;
+		 }
+	}
+	public void startFishing() {
+		
+		input();
+		waitFinshing();
+		start();
+		printPole();
+
+	}
+
+	public void aquarium() {
+		
+		ch = 0;
+	
+		Iterator<FishingVO> it = lists.iterator();
+		
+		while(it.hasNext()) {
+	
+			FishingVO vo = it.next();
+			System.out.println("잡은 물고기 목록: "+vo.getFish());
+		}
+		
+		while(true) {
+
+			do {
+				System.out.print("수족관 메뉴: 1. 먹기 2. 방생 3. 메인으로 돌아가기");
+				ch = sc.nextInt();
+
+				switch(ch) {
+				case 1 : eat();break;
+				case 2 : release();break;
+				case 3 : return;
+				}
+				
+			}while(ch<1||ch>3);
+		}
+	}
+	
+	public void eat() {
+
+		//ob = new Fishing();
+		Iterator<FishingVO> it = lists.iterator();
+		
+		System.out.print("어떤 물고기를 요리하시겠습니까?");
+		String tfish = sc.next();
+		
+		while(it.hasNext()) {
+			
+			FishingVO vo = it.next();//위에 vo, it 이름이 같아도 무관. method 안에서는 모름.
+			
+			if(!vo.equals(tfish)) {
+				
+				System.out.printf("맛있는 %s 요리가 완성되었습니다\n",tfish);
+				System.out.println("맛있게 드세요!");
+				lists.remove(vo);
+			}else {
+				System.out.println("물고기가 없습니다");
+				//lists.remove(vo);
+				lists.remove(vo.getFish());
+			}
+			return;
+		}
+			
+		/*ob.start();
+
+		try {
+			ob.join();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}*/
+	}
+
+	public void release() {
+		
+		System.out.print("어떤 물고기를 놓아주시겠습니까");
+		String fish = sc.next();
+		
+		Iterator<FishingVO> it = lists.iterator();
+		
+		while(it.hasNext()) {
+			
+			FishingVO vo = it.next();
+			
+			if(vo.getFish().equals(fish)) {
+				
+				lists.remove(vo);
+				System.out.printf("%s 를(을) 놓아주었습니다",fish);
+
+			}else {
+				System.out.println("물고기가 없습니다");
+				return;
+			}
+			
+		}
+		
+	}
+
+	public boolean searchFish(String fish) {
+		
+		if(lists.contains(fish)) {
+			return true;
+		}
+		
+		return false;
+	
+		
+	}
+}

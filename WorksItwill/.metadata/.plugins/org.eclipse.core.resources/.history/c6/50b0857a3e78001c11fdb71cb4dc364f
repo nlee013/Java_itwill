@@ -1,0 +1,118 @@
+package javaProject1;
+
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class FishingMain extends Thread{
+
+	/*Scanner sc = new Scanner(System.in);
+	private int num;//사용자가 누를 숫자
+	private int fnum;
+	private String[] type;
+	private static String[] fname = {"사하브라 물고기", "피치드 물고기", "티위르 물고기", "퓨라기 물고기", "미라다 물고기",
+										"신발", "시프란 물고기", "스프링 물고기", "자바자바 물고기", "리엑트 물고기",
+										"오라클 물고기", "애프르 물고기", "사므성 물고기", "엘지르 물고기", "헤프리 물고기"};
+	public FishingMain(String[] fname) {
+		
+		this.fname = fname;
+	}
+	
+	public void input() {
+		
+		Random rd = new Random();
+		
+		do {
+			System.out.println("낚시대 하나를 고르세요! 1)셔흐르린 낚시대 2)잘자브린 낚시대 3)평버므한 낚시대");
+			num = sc.nextInt();
+			
+		}while(num > 3 || num < 1);
+		
+		type = new String[num];
+		int i = 0;
+		
+		while(i < num) {
+			
+			type[i] = fname[rd.nextInt(15) + 1];
+			
+			for(int j = 0; j < i; j++) {
+				
+				//if(type[i] == type[j]) {
+					
+					//i--;
+					break;
+				//}
+			}
+			i++;
+		}
+		
+	}
+	
+	public void print() {
+		
+		System.out.println("오오!! 잘 잡으셨네요");
+		
+				if(num == 1) {
+					System.out.printf("%d번 낚시대를 고른 당신: %s \n", num, type[0]);
+				}else if(num == 2) {
+					System.out.printf("%d번 낚시대를 고른 당신: %s \n", num, type[1]);
+				}else if(num == 3) {
+					System.out.printf("%d번 낚시대를 고른 당신: %s \n", num, type[2]);
+				}
+			
+	}
+	public void waitFinshing() {
+		
+		System.out.println("물고기가 오기를 기다리는 중");
+	}
+	
+	@Override
+	public void run() {
+		
+		 int i = 0;
+		 
+		 while(i < 20) {
+			 
+			 System.out.print(".");
+			 
+			 try {
+				 sleep(100);
+			} catch (Exception e) {
+				System.out.println(e.toString());
+			}
+			 i++;
+		 }
+	}
+*/
+	public static void main(String[] args) throws Exception {
+
+		Fishing f = new Fishing();
+		Scanner sc = new Scanner(System.in);
+		int ch = 0;
+		
+		//ProjectImage pi = new ProjectImage();
+		Test t = new Test();
+		t.mainImage();
+		
+		while(true) {
+			
+			do {
+				System.out.print("1. 낚시 시작 2. 수족관 3. 종료");
+				ch = sc.nextInt();
+				switch(ch) {
+				case 1: f.startFishing();break;
+				case 2:	f.aquarium();break;
+				case 3: System.exit(0);
+				}
+			}while(ch<1||ch>3 );
+		}
+		/*FishingMain fm = new FishingMain(fname);
+		
+		fm.input();
+		fm.waitFinshing();
+		fm.run();
+		fm.print();*/
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package javaProject1;
+ 
+public class FishingVO {
+
+	String fish;
+	
+	public FishingVO() {
+		
+	}
+	
+	public String getFish() {
+		return fish;
+	}
+	public void setFish(String fish) {
+		this.fish = fish;
+	}
+}

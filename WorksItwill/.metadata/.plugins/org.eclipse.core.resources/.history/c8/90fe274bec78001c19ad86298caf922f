@@ -1,0 +1,81 @@
+package javaProject1;
+
+import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class FishingMain {
+
+	public static int count;
+
+	public static void main(String[] args) throws Exception {
+		
+		Test t = new Test();
+		Thread ob = new Fishing();
+		Fishing f = new Fishing();
+		Scanner sc = new Scanner(System.in);
+		int ch = 0;
+		
+		Timer timer = new Timer();
+		
+		//시작 화면
+		t.mainImage();
+				
+		TimerTask task = new TimerTask() {
+			
+			
+			@Override
+			public void run() {
+				
+				for() {}
+				
+				if(count < 35) {
+					try {
+						t.fishBobber();
+						count++;
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				else {
+					timer.cancel();
+				}
+				
+				
+			}
+		};
+		timer.schedule(task, 5000, 2000);
+		timer.cancel();
+		
+		//메뉴
+		while(true) {
+			
+			do {
+
+				System.out.print("1. 낚시 시작 2. 수족관 3. 종료");
+				ch = sc.nextInt();
+				switch(ch) {
+				case 1: f.input();
+						f.run();
+						/*try {
+								f.join();
+						} catch (Exception e) {
+					// TODO: handle exception
+						}*/
+							f.print();
+				break;
+				case 2:	f.aquarium();
+				System.out.println("물고기를 획득했으니 이제 집에 가자!"); break;
+				case 3: f.save();
+				System.out.println("The End!");
+				System.exit(0);
+				}
+
+			}while(ch<1||ch>3 );
+			
+		}
+
+	}
+
+}

@@ -2,8 +2,8 @@ package javaProject1;
 
 import java.io.Serializable;
 
+//직렬화
 public class FishingVO implements Serializable{
-	
 	
 	private String aquaList;
 	
@@ -11,6 +11,7 @@ public class FishingVO implements Serializable{
 		
 	}
 	
+	//물고기 이름 목록
 	public FishingVO (String aquaList) {
 		this.aquaList = aquaList;
 	}

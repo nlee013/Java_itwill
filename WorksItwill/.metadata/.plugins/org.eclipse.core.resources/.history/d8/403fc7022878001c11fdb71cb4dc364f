@@ -1,0 +1,28 @@
+package javaProject1;
+
+import java.util.Random;
+
+public class FishingVO {
+	
+	int num;
+	int ch;
+	int cnt = 0;
+	String type;
+	String[] fname = {"사하브라 물고기", "피치드 물고기", "티위르 물고기", "퓨라기 물고기", "미라다 물고기",
+										"신발", "시프란 물고기", "스프링 물고기", "자바자바 물고기", "리엑트 물고기",
+										"오라클 물고기", "애프르 물고기", "사므성 물고기", "엘지르 물고기", "헤프리 물고기"};
+	Thread ob;
+	Random rd;
+	String fish;
+	
+	public FishingVO() {
+		
+	}
+	
+	public String getFish() {
+		return fish;
+	}
+	public void setFish(String fish) {
+		this.fish = fish;
+	}
+}

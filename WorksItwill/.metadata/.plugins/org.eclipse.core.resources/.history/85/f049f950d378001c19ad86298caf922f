@@ -1,0 +1,25 @@
+package javaProject1;
+
+public class FishingVO {
+	
+	String aquaList;
+
+	public String getAquaList() {
+		return aquaList;
+	}
+
+	public void setAquaList(String aquaList) {
+		this.aquaList = aquaList;
+	}
+	
+	public String toString() {
+
+		String str;
+		
+		str = String.format("%6s",aquaList);
+		
+		return str;
+	}
+	
+
+}

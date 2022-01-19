@@ -1,0 +1,43 @@
+package javaProject1;
+
+import java.util.Scanner;
+
+public class FishingMain {
+
+	public static void main(String[] args) throws Exception {
+
+		Test t = new Test();
+		t.mainImage();
+		Thread ob = new Fishing();
+		Fishing f = new Fishing();
+		Scanner sc = new Scanner(System.in);
+		int ch = 0;
+		
+		
+		while(true) {
+			
+			do {
+
+				System.out.print("1. 낚시 시작 2. 수족관 3. 종료");
+				ch = sc.nextInt();
+				switch(ch) {
+				case 1: f.input();
+						f.start();
+						try {
+								f.join();
+						} catch (Exception e) {
+					// TODO: handle exception
+						}
+							f.print();
+				break;
+				case 2:	f.aquarium();break;
+				case 3: System.exit(0);
+				}
+
+			}while(ch<1||ch>3 );
+			
+		}
+
+	}
+
+}

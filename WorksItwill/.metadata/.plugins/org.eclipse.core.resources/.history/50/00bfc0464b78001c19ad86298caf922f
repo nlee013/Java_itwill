@@ -1,0 +1,13 @@
+package javaProject1;
+
+public class Cooking {
+
+	public void cooking()throws Exception{
+		
+		try {
+			Thread.sleep(10);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
